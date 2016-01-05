@@ -1,7 +1,5 @@
 (function(win){
 	require.config({
-		locale: $.cookie('userlang') || 'en-us', //设置用户预设的语言
-		
 		paths: {
 			'jquery': '../../lib/jquery/dist/jquery.min',
 			'backbone': '../../lib/backbone/backbone',
@@ -34,7 +32,12 @@
 		}  
 	});
 
-	require(['backbone', 'bootstrap', '../common/init', 'AgendaView'], function(Backbone, bootstrap, Init, AgendaView) {
+	require(['backbone', 'bootstrap', 'cookie', '../common/init', 'AgendaView'], function(Backbone, bootstrap, cookie, Init, AgendaView) {
+		//设置用户预设的语言
+		require.config({
+			locale: $.cookie('userlang') || 'en-us', 
+		});
+		
 		//初始化页面顶部和底部
 		Init.initHeaderAndFooter();
 		
