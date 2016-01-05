@@ -1,0 +1,63 @@
+.about-view
+{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.about-view > h1
+{
+	margin: 0 auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.about-view > .meta
+{
+	margin: 0 auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.about-view > .meta > .time
+{
+	font-size: 18px;
+}
+
+.about-view > .meta > .institute,
+.about-view > .meta > .location
+{
+	font-size: 16px;
+}
+
+.about-view > p
+{
+	padding: 0 100px;
+	font-size: 16px;
+	margin-bottom: 30px;
+}
+
+.about-view > .important-dates
+{
+	padding: 0 100px;
+	font-size: 16px;
+	margin-bottom: 50px;
+}
+
+.about-view .bold
+{
+	font-weight: 600;
+}
+
+.about-view .italic
+{
+	font-style: italic;
+}
+
+.about-view .underline
+{
+	text-decoration: underline;
+}
+
+

@@ -1,0 +1,33 @@
+.committee-view
+{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.committee-view > h1
+{
+	margin: 0 auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.committee-view > .group
+{
+	padding: 0 150px;
+	margin-bottom: 30px;
+}
+
+.committee-view > .group > .title
+{
+	margin-bottom: 5px;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.committee-view > .group > .person
+{
+	margin: 3px 0;
+	padding-left: 20px;
+	font-size: 16px;
+}

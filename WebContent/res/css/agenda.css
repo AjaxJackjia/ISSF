@@ -1,0 +1,81 @@
+.agenda-view
+{
+	
+}
+
+.agenda-view > .agenda-title
+{
+	display: block;
+	width: 314px;
+	height: 52px;
+	text-align: center;
+	line-height: 52px;
+	margin: 0px auto;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.agenda-view > .arrangements
+{
+	width: 1200px;
+	margin: 0px auto;
+}
+
+.agenda-view > .arrangements > .arrangement
+{
+	width: 100%;
+}
+
+.agenda-view > .arrangements > .arrangement > h3
+{
+	display: block;
+	width: 314px;
+	height: 52px;
+	text-align: center;
+	line-height: 52px;
+	background: #1c5ea8;
+	color: #fff;
+	font-size: 18px;
+	margin: 0px auto 13px;
+}
+
+.agenda-view > .arrangements > .arrangement > table
+{
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 50px;
+	border: none;
+	text-align: left;
+}
+
+.agenda-view > .arrangements > .arrangement > table .tr-even 
+{
+	background: #d5e4f0;
+}
+
+.agenda-view > .arrangements > .arrangement > table .table-head
+{
+	text-align: center;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.agenda-view > .arrangements > .arrangement > table td
+{
+	font-size: 16px;
+	line-height: 24px;
+	height: 46px;
+	border: none;
+	padding: 10px;
+}
+
+.agenda-view > .arrangements > .arrangement > table td.time
+{
+	width: 150px;
+}
+
+.agenda-view > .arrangements > .arrangement > table td.location
+{
+	width: 280px;
+}
+

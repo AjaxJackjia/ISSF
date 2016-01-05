@@ -1,0 +1,276 @@
+@font-face 
+{
+	font-family: 'OpenSansLight';
+	src: url('../fonts/OpenSans-Light.eot');
+	src: url('../fonts/OpenSans-Light.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/OpenSans-Light.woff') format('woff'),
+		 url('../fonts/OpenSans-Light.ttf') format('truetype'),
+		 url('../fonts/OpenSans-Light.svg#OpenSansLight') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+* 
+{
+	font-family: OpenSansLight, "Microsoft YaHei", "Open Sans", sans-serif, serif;
+}
+
+body, button, input, select, textarea, h1, h2, h3, h4, h5, h6, p, div, span, a, li
+{ 
+	font-family: OpenSansLight, "Microsoft YaHei", "Open Sans", sans-serif, serif;
+	-webkit-font-smoothing: antialiased;
+}
+
+html,
+body
+{
+	position: absolute;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	min-width: 1200px;
+	height: 100%;
+	background: #fff;
+}
+
+body > .container
+{
+	padding: 0;
+	margin: 0;
+	margin-top: 70px;
+	width: 100%;
+}
+
+/* header format begin */
+.header
+{
+	height: 70px;
+	background: #eee;
+	
+	/* set transparent attribute*/
+	filter: alpha(Opacity=90);
+	-moz-opacity:0.9;
+	opacity: 0.9;
+}
+
+.header-fixed
+{
+	position: fixed;
+	z-index: 10;
+	right: 0;
+	left: 0;
+	top: 0;
+}
+
+.header > .wrapper
+{
+	min-width: 1100px;
+	max-width: 1200px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.header > .wrapper > .brand
+{
+	display: inline-block;
+	margin: 0;
+	margin-left: 60px;
+	padding: 0;
+	width: 200px;
+	height: 70px;
+	text-decoration: none;
+}
+
+.header > .wrapper > .brand > span
+{
+	display: block;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	line-height: 70px;
+	font-size: 35px;
+}
+
+.header > .wrapper > .nav
+{
+	float: right;
+	margin-right: 60px;
+	list-style: none;
+}
+
+.header > .wrapper > .nav > li
+{
+	display: inline-block;
+	width: 100px;
+	height: 50px;
+	margin: 0 10px;
+	
+	text-align: center;
+	line-height: 50px;
+}
+
+.header > .wrapper > .nav > li a
+{
+	text-decoration: none;
+	font-weight: 800;
+	font-size: 18px;
+}
+/* header format end */
+
+/* footer format begin */
+.footer
+{
+	height: 260px;
+	background: #eee;
+	
+	/* set transparent attribute*/
+	filter: alpha(Opacity=90);
+	-moz-opacity:0.9;
+	opacity: 0.9;
+}
+
+.footer > .wrapper
+{
+	min-width: 1100px;
+	max-width: 1200px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.footer > .wrapper > .nav
+{
+	display: block;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	list-style: none;
+}
+
+.footer > .wrapper > .nav > li
+{
+	display: inline-block;
+	padding: 0 40px;
+	width: 30%;
+	text-align: center;
+}
+
+.footer > .wrapper > .nav-title > li > h3
+{
+	height: 40px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #555;
+	margin-bottom: 15px;
+	text-transform: uppercase;
+}
+
+.footer > .wrapper > .nav-content
+{
+	height: 150px;
+}
+
+.footer > .wrapper > .nav-content > li
+{
+	vertical-align: top;
+}
+
+.footer > .wrapper > .copyright
+{
+	margin: 0 auto;
+	text-align: center;
+}
+
+.footer > .wrapper > .copyright span
+{
+	font-weight: 800;
+}
+/* footer format end */
+
+/* head room setting begin*/
+.animated {
+    -webkit-animation-duration: .5s;
+    -moz-animation-duration: .5s;
+    -o-animation-duration: .5s;
+    animation-duration: .5s;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both
+}
+@-webkit-keyframes slideDown {
+    0% {
+        -webkit-transform: translateY(-70px)
+    }
+    100% {
+        -webkit-transform: translateY(0)
+    }
+}
+@-moz-keyframes slideDown {
+    0% {
+        -moz-transform: translateY(-70px)
+    }
+    100% {
+        -moz-transform: translateY(0)
+    }
+}
+@-o-keyframes slideDown {
+    0% {
+        -o-transform: translateY(-70px)
+    }
+    100% {
+        -o-transform: translateY(0)
+    }
+}
+@keyframes slideDown {
+    0% {
+        transform: translateY(-70px)
+    }
+    100% {
+        transform: translateY(0)
+    }
+}
+.animated.slideDown {
+    -webkit-animation-name: slideDown;
+    -moz-animation-name: slideDown;
+    -o-animation-name: slideDown;
+    animation-name: slideDown
+}
+@-webkit-keyframes slideUp {
+    0% {
+        -webkit-transform: translateY(0)
+    }
+    100% {
+        -webkit-transform: translateY(-70px)
+    }
+}
+@-moz-keyframes slideUp {
+    0% {
+        -moz-transform: translateY(0)
+    }
+    100% {
+        -moz-transform: translateY(-70px)
+    }
+}
+@-o-keyframes slideUp {
+    0% {
+        -o-transform: translateY(0)
+    }
+    100% {
+        -o-transform: translateY(-70px)
+    }
+}
+@keyframes slideUp {
+    0% {
+        transform: translateY(0)
+    }
+    100% {
+        transform: translateY(-70px)
+    }
+}
+.animated.slideUp {
+    -webkit-animation-name: slideUp;
+    -moz-animation-name: slideUp;
+    -o-animation-name: slideUp;
+    animation-name: slideUp
+}
+/* head room setting end*/

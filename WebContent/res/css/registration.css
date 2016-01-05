@@ -1,0 +1,19 @@
+.registration-view
+{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.registration-view > h1
+{
+	margin: 0 auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.registration-view > p
+{
+	padding: 0 100px;
+	margin-bottom: 100px;
+}
