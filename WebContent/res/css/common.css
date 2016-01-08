@@ -31,6 +31,7 @@ body
 	min-width: 1200px;
 	height: 100%;
 	background: #fff;
+	color: #000;
 }
 
 body > .container
@@ -102,12 +103,23 @@ body > .container
 .header > .wrapper > .nav > li
 {
 	display: inline-block;
-	width: 100px;
-	height: 50px;
-	margin: 0 10px;
+	width: 130px;
+	height: 70px;
+	margin: 0;
 	
 	text-align: center;
 	line-height: 50px;
+}
+
+.header > .wrapper > .nav > li.active
+{
+	border-bottom: 3px solid #23a8f5;
+}
+
+.header > .wrapper > .nav > li a:hover
+{
+	height: 70px;
+	border-bottom: 3px solid #23a8f5;
 }
 
 .header > .wrapper > .nav > li a
@@ -122,6 +134,7 @@ body > .container
 .footer
 {
 	height: 260px;
+	color: black;
 	background: #eee;
 	
 	/* set transparent attribute*/

@@ -79,7 +79,6 @@
 
 .home-view > .abstract 
 {
-	color: #849f52;
   	background-color: #B0E0E6;
 }
 
@@ -91,15 +90,22 @@
 	max-width: 1100px;
 }
 
+.home-view > .abstract  > .container.padded > h1
+{
+	font-weight: 600;
+}
+
 .home-view > .abstract  > .container.padded > h3
 {
 	line-height: 35px;
+	color: black;
 }
 
 .home-view > .abstract > .container a.btn
 {
 	font-weight: bold;
-	color: #fff;
+	color: black;
+	border-color: black;
 	text-decoration: none;
 	background-color: rgba(255, 255, 255, 0.1);
 	border-radius: 4px;
@@ -125,7 +131,7 @@
 	-ms-user-select: none;
 	user-select: none;
 	background-image: none;
-	border: 1px solid transparent;
+	border: 1px solid black;
 	border-radius: 4px;
 }
 

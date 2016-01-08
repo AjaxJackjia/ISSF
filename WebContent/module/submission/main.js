@@ -32,7 +32,7 @@
 		}  
 	});
 
-	require(['backbone', 'bootstrap', 'cookie', '../common/init', 'AgendaView'], function(Backbone, bootstrap, cookie, Init, AgendaView) {
+	require(['backbone', 'bootstrap', 'cookie', '../common/init', 'PapersView'], function(Backbone, bootstrap, cookie, Init, PapersView) {
 		//设置用户预设的语言
 		require.config({
 			locale: $.cookie('userlang') || 'en-us', 
@@ -42,8 +42,8 @@
 		Init.initHeaderAndFooter();
 		
 		//加载页面
-		var agenda = new AgendaView();
-		$('body > .container').append($(agenda.render().el));
+		var papers = new PapersView();
+		$('body > .container').append($(papers.render().el));
 
 	});
 })(window);

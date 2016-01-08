@@ -42,8 +42,6 @@ define([ 'backbone', 'util' ], function(Backbone, util) {
 		},
 		
 		render: function(){
-			$(this.el).append('<h1 class="agenda-title">Agenda</h1>');
-			
 			$(this.el).append(_.template(this.arrangement_template())({arrangements: this.arrangements}));
 			
 			return this;

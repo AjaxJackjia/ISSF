@@ -17,3 +17,117 @@
 	padding: 0 100px;
 	margin-bottom: 100px;
 }
+
+.guide-view > .guide-menu
+{
+	margin: 0 auto;
+	margin-left: 150px;
+	margin-right: 150px;
+	text-align: center;
+}
+
+.guide-view > .guide-menu.nav-tabs > li
+{
+	display: inline-block;
+	float: none;
+	width: 270px;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.guide-view > .guide-menu.nav-tabs > li.active
+{
+	border-bottom: 3px solid #23a8f5;
+}
+
+.guide-view > .guide-menu.nav-tabs > li > a
+{
+	border: none;
+}
+
+.guide-view > .guide-menu.nav-tabs > li > a:hover
+{
+	background-color: #fff;
+}
+
+.guide-view > .guide-content
+{
+	margin: 0 150px;
+}
+
+.guide-view > .guide-content > .tab-pane
+{
+	padding: 20px 10px;
+}
+
+/* agenda view begin */
+.agenda-view
+{
+	
+}
+
+.agenda-view > .arrangements
+{
+	width: 100%;
+	margin: 0px auto;
+}
+
+.agenda-view > .arrangements > .arrangement
+{
+	width: 100%;
+	margin-top: 20px;
+}
+
+.agenda-view > .arrangements > .arrangement > h3
+{
+	display: block;
+	width: 314px;
+	height: 52px;
+	text-align: center;
+	line-height: 52px;
+	background: #1c5ea8;
+	color: #fff;
+	font-size: 18px;
+	margin: 0px auto 13px;
+}
+
+.agenda-view > .arrangements > .arrangement > table
+{
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 50px;
+	border: none;
+	text-align: left;
+}
+
+.agenda-view > .arrangements > .arrangement > table .tr-even 
+{
+	background: #d5e4f0;
+}
+
+.agenda-view > .arrangements > .arrangement > table .table-head
+{
+	text-align: center;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.agenda-view > .arrangements > .arrangement > table td
+{
+	font-size: 16px;
+	line-height: 24px;
+	height: 46px;
+	border: none;
+	padding: 10px;
+}
+
+.agenda-view > .arrangements > .arrangement > table td.time
+{
+	width: 150px;
+}
+
+.agenda-view > .arrangements > .arrangement > table td.location
+{
+	width: 280px;
+}
+/* agenda view end */

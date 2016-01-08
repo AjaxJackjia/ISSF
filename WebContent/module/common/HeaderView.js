@@ -14,8 +14,8 @@ define([ 'backbone', 'util' ], function(Backbone, util) {
 			this.nav = {
 				'Home': 'index.html',
 				'About': 'about.html',
-				'Committee': 'committee.html',
-				'Agenda': 'agenda.html',
+				'Committees': 'committees.html',
+				'Submission': 'submission.html',
 				'Guide': 'guide.html',
 				'Registration': 'registration.html'
 			};
@@ -24,7 +24,11 @@ define([ 'backbone', 'util' ], function(Backbone, util) {
 		render: function(){
 			var $nav = $('<ul class="nav nav-main">');
 			_.each(this.nav, function(value, key) {
-				$nav.append('<li><a href="'+ value +'">' + key + '</a></li>');
+				var lowerCaseKey = key == 'Home' ? 'index' : key.toLowerCase();
+				if(location.href.indexOf(lowerCaseKey) > 0) 
+					$nav.append('<li class="active"><a href="'+ value +'">' + key + '</a></li>');
+				else
+					$nav.append('<li><a href="'+ value +'">' + key + '</a></li>');
 			});
 			
 			var $brand = $('<a class="brand" href="index.html">');

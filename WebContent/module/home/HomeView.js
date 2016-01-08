@@ -118,7 +118,7 @@ define([ 'backbone', 'util' ], function(Backbone, util) {
 		sponsor_template: function() {
 			return  '<div class="sponsors">' + 
 					'	<div class="container padded text-center">' + 
-					'	<h3>Sponsors</h3>' + 
+					'	<h1>Sponsors</h1>' + 
 					'	<div class="brands">' + 
 					'		<%_.each(sponsor_data, function(item) {%> ' + 
 					'			<div class="brand"> ' + 
