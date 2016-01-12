@@ -37,43 +37,43 @@ define([ 'backbone', 'util' ], function(Backbone, util) {
 			this.carousel_data = [
 				{
 					img: {
-						url: 'res/images/1.jpg',
+						url: 'res/images/1_opt.jpg',
 						alt: 'The 1st slide' 
 					}
 				},
 				{
 					img: {
-						url: 'res/images/2.jpg',
+						url: 'res/images/2_opt.jpg',
 						alt: 'The 2nd slide' 
 					}
 				},
 				{
 					img: {
-						url: 'res/images/3.jpg',
+						url: 'res/images/3_opt.jpg',
 						alt: 'The 3rd slide' 
 					}
 				},
 				{
 					img: {
-						url: 'res/images/4.jpg',
+						url: 'res/images/4_opt.jpg',
 						alt: 'The 4th slide' 
 					}
 				},
 				{
 					img: {
-						url: 'res/images/5.jpg',
+						url: 'res/images/5_opt.jpg',
 						alt: 'The 5th slide' 
 					}
 				},
 				{
 					img: {
-						url: 'res/images/6.jpg',
+						url: 'res/images/6_opt.jpg',
 						alt: 'The 6th slide' 
 					}
 				},
 				{
 					img: {
-						url: 'res/images/7.jpg',
+						url: 'res/images/7_opt.jpg',
 						alt: 'The 7th slide' 
 					}
 				}
