@@ -17,9 +17,14 @@
 	max-width: 1100px;
 }
 
+.home-view > .carousel
+{
+	margin-top: 70px;
+}
+
 .home-view > .carousel > .carousel-inner
 {
-	height: 650px;
+	min-height: 350px;
 }
 
 .home-view > .carousel > .carousel-inner > .item > img

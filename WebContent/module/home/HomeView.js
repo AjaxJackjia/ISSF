@@ -8,29 +8,73 @@ define([ 'backbone', 'util' ], function(Backbone, util) {
 			_.bindAll(this, 'render', 'carousel_template');
 			
 			//carousel data
+//			this.carousel_data = [
+//				{
+//					title: 'International Summit on Smart Finance 2016',
+//					content: 'May 20-21, 2016 <br/> Shenzhen, China',
+//					img: {
+//						url: 'res/images/carousel-sz-view.jpg',
+//						alt: 'First slide' 
+//					}
+//				},
+//				{
+//					title: 'International Summit on Smart Finance 2016',
+//					content: 'May 20-21, 2016 <br/> Shenzhen, China',
+//					img: {
+//						url: 'res/images/carousel-ecommerce.jpg',
+//						alt: 'First slide' 
+//					}
+//				},
+//				{
+//					title: 'International Summit on Smart Finance 2016',
+//					content: 'May 20-21, 2016 <br/> Shenzhen, China',
+//					img: {
+//						url: 'res/images/carousel-internet-finance.jpg',
+//						alt: 'First slide' 
+//					}
+//				}
+//			];
 			this.carousel_data = [
 				{
-					title: 'International Summit on Smart Finance 2016',
-					content: 'May 20-21, 2016 <br/> Shenzhen, China',
 					img: {
-						url: 'res/images/carousel-sz-view.jpg',
-						alt: 'First slide' 
+						url: 'res/images/1.jpg',
+						alt: 'The 1st slide' 
 					}
 				},
 				{
-					title: 'International Summit on Smart Finance 2016',
-					content: 'May 20-21, 2016 <br/> Shenzhen, China',
 					img: {
-						url: 'res/images/carousel-ecommerce.jpg',
-						alt: 'First slide' 
+						url: 'res/images/2.jpg',
+						alt: 'The 2nd slide' 
 					}
 				},
 				{
-					title: 'International Summit on Smart Finance 2016',
-					content: 'May 20-21, 2016 <br/> Shenzhen, China',
 					img: {
-						url: 'res/images/carousel-internet-finance.jpg',
-						alt: 'First slide' 
+						url: 'res/images/3.jpg',
+						alt: 'The 3rd slide' 
+					}
+				},
+				{
+					img: {
+						url: 'res/images/4.jpg',
+						alt: 'The 4th slide' 
+					}
+				},
+				{
+					img: {
+						url: 'res/images/5.jpg',
+						alt: 'The 5th slide' 
+					}
+				},
+				{
+					img: {
+						url: 'res/images/6.jpg',
+						alt: 'The 6th slide' 
+					}
+				},
+				{
+					img: {
+						url: 'res/images/7.jpg',
+						alt: 'The 7th slide' 
 					}
 				}
 			];
@@ -75,16 +119,28 @@ define([ 'backbone', 'util' ], function(Backbone, util) {
 			//Part #3: partner
 			$(this.el).append(_.template(this.sponsor_template())({sponsor_data: this.sponsor_data}));
 			
+			//调整carousel自适应高度
+			var self = this;
+			self.resizeCarousel();
+			$( window ).resize(function() {
+				self.resizeCarousel();
+			});
+			
 			return this;
+		},
+		
+		resizeCarousel: function() {
+			var carouselHeight = $( window ).height() - 70;
+			$(this.el).find('.carousel-inner').css('height', carouselHeight + 'px');
 		},
 		
 		carousel_template: function() {
 			return '<div id="portal_carousel" class="row carousel slide"> ' + 
 					'	<!-- 轮播（Carousel）指标 --> ' + 
 					'	<ol class="carousel-indicators">  ' + 
-					'		<li data-target="#portal-carousel" data-slide-to="0" class="active"></li> ' + 
-					'		<li data-target="#portal-carousel" data-slide-to="1"></li> ' + 
-					'		<li data-target="#portal-carousel" data-slide-to="2"></li> ' + 
+					'		<%_.each(carousel_data, function(item, index) {%> ' + 
+					'			<li data-target="#portal_carousel" data-slide-to="<%= index %>" class="<%- index==0?"active":"" %>" ></li> ' + 
+					'		<%});%> ' + 
 					'	</ol> ' + 
 					'	<!-- 轮播（Carousel）项目 --> ' + 
 					'	<div class="carousel-inner"> ' + 

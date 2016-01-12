@@ -1,5 +1,7 @@
 (function(win){
 	require.config({
+		waitSeconds: 30,
+		
 		paths: {
 			'jquery': '../../lib/jquery/dist/jquery.min',
 			'backbone': '../../lib/backbone/backbone',
