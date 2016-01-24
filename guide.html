@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>International Summit on Smart Finance</title>
+		
+		<!-- common style -->
+		<link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
+		
+		<!-- module style -->
+		<link rel="stylesheet" href="res/css/common.css">
+		<link rel="stylesheet" href="res/css/guide.css">
+		
+		<!-- common lib -->
+		<script src="lib/jquery/dist/jquery.min.js"></script>
+		<script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="lib/headroom.js/dist/headroom.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="guide-view">
+				<h1>Guide</h1>
+				<ul class="guide-menu nav nav-tabs" role="tablist">
+				  <li role="presentation" class="active">
+						<a href="#agenda" aria-controls="agenda" role="tab" data-toggle="tab">Agenda</a> 
+				  </li>
+				  <li role="presentation">
+				  		<a href="#general" aria-controls="ps" role="tab" data-toggle="tab">General Information</a> 
+				  </li>
+				</ul>
+				<div class="guide-content tab-content">
+				  <div role="tabpanel" class="tab-pane fade in active" id="agenda">
+				  	<div class="agenda-view">
+				  		<div class="arrangements"></div>
+				  	</div>
+				  </div>
+				  <div role="tabpanel" class="tab-pane fade" id="general">
+				  	<div class="general-information-view"></div>
+				  </div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- module js -->
+		<script src="module/guide/i18n_data.js"></script>
+		<script src="module/common/common.js"></script>
+		<script src="module/guide/main.js"></script>
+	</body>
+</html>
