@@ -1,6 +1,4 @@
 (function(win){
-	//设置语言
-	var locale = sessionStorage.getItem('lang') || 'en-us';
 	var mapping = i18n_about_page[locale];
 	
 	//设置内容
@@ -23,6 +21,5 @@
 	$('#date4').html(mapping.date4);
 	$('#date5').html(mapping.date5);
 	
-	//初始化页面顶部和底部
-	initHeaderAndFooter();
+	
 })(window);

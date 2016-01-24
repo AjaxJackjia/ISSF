@@ -1,39 +1,13 @@
 var i18n_about_page = {
 	'en-us': {
-		'title': 'International Summit on Smart Finance',
-		'time': 'May 20-21, 2016',
-		'institute': 'Center on Global Internet Finance at the City University of Hong Kong',
-		'location': 'Shenzhen Research Institute, Shenzhen, China',
-		'p1': 'Sponsored by National Natural Science Foundation of China, the International Summit on Smart Finance (ISSF) is aimed to create a direct channel for industry leaders to connect and communicate with academic leaders on how to harness big data analytics in New Finance.  ISSF will be hosted jointly by the Center on Global Internet Finance and the College of Business, City University of Hong Kong.  It will be held at the City University of Hong Kong\'s Shenzhen Research Institute. ',
-		'p2': 'We define <span class="italic">Smart Finance</span> as research and development in the intersection of <span class="underline">business intelligence</span> (big data analytics and data science) and <span class="underline">new finance</span> (P2P lending, crowdfunding, supply chain finance, and e-payment systems).  The main objective of ISSF is to provide a much-needed platform for in-depth exchange of ideas and solutions among industry leaders, academic leaders, and government officials on how to harness Smart Finance.',
-		'p3': 'To bring the conference to the Internet+ age, ISSF will experiment an innovative conferencing format called <span class="bold">Multi-locale O2O Meeting</span> (or simply <span class="bold">MOM</span>) that includes two-day face-to-face conference meetings, as well as online meetings before, during, and after the conference.  The multiple locales of the conference include <span class="bold italic">Shenzhen</span> (the City University of Hong Kong\'s <span class="bold italic">Shenzhen</span> Research Institute), <span class="bold italic">Beijing</span> (Central University of Economics and Finance), <span class="bold italic">Hong Kong</span> (City University of Hong Kong), <span class="bold italic">Nanjing</span> (Nanjing University), and <span class="bold italic">Shanghai</span> (Shanghai Jiao Tong University), among other possible locales.  The online activities will include synchronous or asynchronous exchange of information in the form of keynote speeches, panel discussions, and other presentations.  ',
-		'p4': 'ISSF sets its goals on promoting industrial best practices and government regulations in relevant business areas, on facilitating academic researchers to study industrial standards, theoretical advances, and educational frameworks, and on connecting industries and academics to identify and collaborate on unprecedented new opportunities.  The summit will include typical conference components such as keynotes, planetary speeches, panels, and paper presentations that are either invited or submitted from researchers in universities and industries. Areas of research will include, but not limited to, big data finance, internet finance, and financial intelligence. ',
-		'p5': 'In the online components of the summit, we will offer a few <span class="bold">theme-based social platforms</span> for (1) <span class="bold">faculty</span> to match and interact with students with potential research interest in this area, (2) <span class="bold">companies</span> to match and interact with researchers on collaboration opportunities, (3) <span class="bold">schools or departments</span> in universities to match and interact with peers for globalization activities, and (4) <span class="bold">students</span> to match and interact with other students to form groups on discovery and innovation that will lead to projects potentially fundable by companies.  ISSF will experiment with these platforms as social experiments in <span class="italic">Smart Finance.</span>',
-		'p6': 'The summit program will be created based partially on the outcomes of various interactions in these platforms.  For instance, <span class="bold">panel sessions could be created on hot and potentially controversial issues surfaced in various social interactions</span>. ',
-		'date_title': 'Important Dates:',
-		'date1': 'Theme-Based Social Platforms Open: February 15, 2016',
-		'date2': 'Position Papers due: February 29, 2016 (3-5 pages in the 2-column IEEE format)',
-		'date3': 'Acceptance Notice: March 7, 2016',
-		'date4': 'Camera Ready Papers due: March 15, 2016',
-		'date5': 'Program Announcement Online: March 25, 2016'
+		'title': 'Guide',
+		'agenda': 'Agenda',
+		'general_info': 'Hotel', 
 	},
 	
 	'zh-cn': {
-		'title': '国际智慧金融峰会',
-		'time': 'May 20-21, 2016',
-		'institute': 'Center on Global Internet Finance at the City University of Hong Kong',
-		'location': 'Shenzhen Research Institute, Shenzhen, China',
-		'p1': 'Sponsored by National Natural Science Foundation of China, the International Summit on Smart Finance (ISSF) is aimed to create a direct channel for industry leaders to connect and communicate with academic leaders on how to harness big data analytics in New Finance.  ISSF will be hosted jointly by the Center on Global Internet Finance and the College of Business, City University of Hong Kong.  It will be held at the City University of Hong Kong\'s Shenzhen Research Institute. ',
-		'p2': 'We define <span class="italic">Smart Finance</span> as research and development in the intersection of <span class="underline">business intelligence</span> (big data analytics and data science) and <span class="underline">new finance</span> (P2P lending, crowdfunding, supply chain finance, and e-payment systems).  The main objective of ISSF is to provide a much-needed platform for in-depth exchange of ideas and solutions among industry leaders, academic leaders, and government officials on how to harness Smart Finance.',
-		'p3': 'To bring the conference to the Internet+ age, ISSF will experiment an innovative conferencing format called <span class="bold">Multi-locale O2O Meeting</span> (or simply <span class="bold">MOM</span>) that includes two-day face-to-face conference meetings, as well as online meetings before, during, and after the conference.  The multiple locales of the conference include <span class="bold italic">Shenzhen</span> (the City University of Hong Kong\'s <span class="bold italic">Shenzhen</span> Research Institute), <span class="bold italic">Beijing</span> (Central University of Economics and Finance), <span class="bold italic">Hong Kong</span> (City University of Hong Kong), <span class="bold italic">Nanjing</span> (Nanjing University), and <span class="bold italic">Shanghai</span> (Shanghai Jiao Tong University), among other possible locales.  The online activities will include synchronous or asynchronous exchange of information in the form of keynote speeches, panel discussions, and other presentations.  ',
-		'p4': 'ISSF sets its goals on promoting industrial best practices and government regulations in relevant business areas, on facilitating academic researchers to study industrial standards, theoretical advances, and educational frameworks, and on connecting industries and academics to identify and collaborate on unprecedented new opportunities.  The summit will include typical conference components such as keynotes, planetary speeches, panels, and paper presentations that are either invited or submitted from researchers in universities and industries. Areas of research will include, but not limited to, big data finance, internet finance, and financial intelligence. ',
-		'p5': 'In the online components of the summit, we will offer a few <span class="bold">theme-based social platforms</span> for (1) <span class="bold">faculty</span> to match and interact with students with potential research interest in this area, (2) <span class="bold">companies</span> to match and interact with researchers on collaboration opportunities, (3) <span class="bold">schools or departments</span> in universities to match and interact with peers for globalization activities, and (4) <span class="bold">students</span> to match and interact with other students to form groups on discovery and innovation that will lead to projects potentially fundable by companies.  ISSF will experiment with these platforms as social experiments in <span class="italic">Smart Finance.</span>',
-		'p6': 'The summit program will be created based partially on the outcomes of various interactions in these platforms.  For instance, <span class="bold">panel sessions could be created on hot and potentially controversial issues surfaced in various social interactions</span>. ',
-		'date_title': 'Important Dates:',
-		'date1': 'Theme-Based Social Platforms Open: February 15, 2016',
-		'date2': 'Position Papers due: February 29, 2016 (3-5 pages in the 2-column IEEE format)',
-		'date3': 'Acceptance Notice: March 7, 2016',
-		'date4': 'Camera Ready Papers due: March 15, 2016',
-		'date5': 'Program Announcement Online: March 25, 2016'
+		'title': '指引',
+		'agenda': '日程安排',
+		'general_info': '酒店', 
 	}
 };

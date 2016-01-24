@@ -1,167 +1,183 @@
 (function(win){
-	//设置语言
-	var locale = sessionStorage.getItem('lang') || 'en-us';
 	var mapping = i18n_about_page[locale];
 	
 	//设置内容
 	//Conference Co-Chairs:
 	var conference_cochairs = [
-	    'Chen, Guoqing, Tsinghua University, China',
-	    'Goes, Paulo, University of Arizona, USA',
-	    'Zhao, J. Leon, City University of Hong Kong'
+	    mapping.conference_cochairs1,
+	    mapping.conference_cochairs2,
+	    mapping.conference_cochairs3
 	];
 	
 	//Program Co-Chairs:
 	var program_cochairs = [
-	    'Lau, Raymond, City University of Hong Kong',
-	    'Ye, Qiang, Harbin Institute of Technology, China',
-	    'Zhang, Dongsong, University of Maryland Baltimore County, USA'
+		mapping.program_cochairs1,
+		mapping.program_cochairs2,
+		mapping.program_cochairs3
 	];
 	
-	//Honorary Co-Chairs: (Pending confirmation)
+	//Honorary Co-Chairs: 
 	var honorary_cochairs = [
-		    'Ramayya Krishnan, Carnegie Mellon University, USA',
-	    'Houmin Yan, City University of Hong Kong',
-	    'Jia He, South University of Science and Technology, Shenzhen, China'
+		mapping.honorary_cochairs1,
+		mapping.honorary_cochairs2,
+		mapping.honorary_cochairs3
 	];
 	
-	//Advisory Committee: (Pending confirmation)
-	var advisory_committee = [
-		'Basu, Amit, South Methodist University, USA',
-		'Chaturvedi, Alok, Purdue University, USA',
-		'Chau, Patrick, University of Hong Kong',
-		'Chen, Hsinchun, University of Arizona. USA ',
-		'Dennis, Allan, University of Indiana, USA ',
-		'Gang, Kou, Southwest University of Finance and Economics, China ',
-		'Goul, Michael, Arizona State University, USA',
-		'Gupta, Alok, University of Minnesota, USA',
-		'Kauffmann, Rob, Singapore Management University ',
-		'Leung, Michael, China CITIC Bank International Limited, Hong Kong ',
-		'Liang, T. P., National Sun Yat-sen University, Kaohsiung, Taiwan',
-		'Mao, Jiye, Renmin University, Beijing, China',
-		'Miller, Steve, Singapore Management University',
-		'Rai, Arun, Georgia State University, USA',
-		'Ramesh, Ram, University at Buffalo, USA',
-		'Tam, Kar Yan, Hong Kong University of Science and Technology',
-		'Wang, Huaiqing, South University of Science and Technology, Shenzhen, China',
-		'Wang, Xia, Tsinghua University, China',
-		'Wei, K.K., City University of Hong Kong',
-		'Westland, Chris, University of Illinois at Chicago, USA ',
-		'Xie, Kang, Sun Yat-sen University, Guangzhou, China',
-		'Zeng, Daniel, University of Arizona. USA'
-	];
-	
-	//Industry Co-Chairs: (Pending confirmation)
+	//Industry Co-Chairs:
 	var industry_cochairs = [
-		'Cheng, Hsing Kenny, University of Florida, USA',
-	    'Lin, Zhangxi, Texas Tech University, USA',
-	    'Wang, Harry. Delaware University, USA',
-	    'Wen, Zheyi, Rongyou Fortune, Beijing, China'
+		mapping.industry_cochairs1,
+		mapping.industry_cochairs2,
+		mapping.industry_cochairs3,
+		mapping.industry_cochairs4
 	];
-	
-	//Collaborative Co-Chairs: (Pending confirmation)
+
+	//Competition Co-Chairs:
+	var competition_cochairs = [
+		mapping.competition_cochairs1,
+		mapping.competition_cochairs2,
+		mapping.competition_cochairs3
+	];
+
+	//Sponsorship Co-Chairs: 
+	var sponsorship_cochairs = [
+		mapping.sponsorship_cochairs1,
+		mapping.sponsorship_cochairs2,
+		mapping.sponsorship_cochairs3
+	];
+
+	//Collaborative Co-Chairs:
 	var collaborative_cochairs = [
-		'Santanam, Raghu, Arizona State University, USA',
-	    'Zhang, Han, Georgia Institute of Technology, USA',
-	    'Zhang, Pengzhu, Shanghai Jiao Tong University, China',
-	    'Zhu, Jianming, Central University of Finance and Economics, Beijing, China'
+		mapping.collaborative_cochairs1,
+		mapping.collaborative_cochairs2,
+		mapping.collaborative_cochairs3,
+		mapping.collaborative_cochairs4
 	];
 	
-	//Research Camp Co-Chairs: (Pending confirmation)
+	//Research Camp Co-Chairs:
 	var research_camp_cochairs = [
-		'Baesens, Bart, KU Leuven, Belgium ',
-	    'Bapna, Ravi, University of Minnesota, USA',
-	    'Sang-Pil Han, Arizona State University, USA'
+		mapping.research_camp_cochairs1,
+		mapping.research_camp_cochairs2,
+		mapping.research_camp_cochairs3
 	];
 	
 	//Faculty Co-Chairs: (Pending confirmation)
 	var faculty_cochairs = [
-		'Chiang, Roger, University of Cincinnati, USA',
-	    'Fan, Ming, University of Washington, USA',
-	    'Yue, Wei Thoo, City University of Hong Kong'
+		mapping.faculty_cochairs1,
+		mapping.faculty_cochairs2,
+		mapping.faculty_cochairs3
 	];
 	
-	//Student Co-Chairs: (Pending confirmation)
+	//Student Co-Chairs:
 	var student_cochairs = [
-		'Lin, Mingfeng, University of Arizona, USA',
-	    'Shan, Jay, University of Cincinnati, USA',
-	    'Wang, Chong Alex, City University of Hong Kong'
+		mapping.student_cochairs1,
+		mapping.student_cochairs2,
+		mapping.student_cochairs3
 	];
 	
-	//Publicity Co-Chairs: (Pending confirmation)
+	//Publicity Co-Chairs: 
 	var publicity_cochairs = [
-		'Lang, Karl, City University of New York, USA',
-	    'Li, Qing, City University of Hong Kong',
-	    'Guo, Xunhua, Tsinghua University, China'
+		mapping.publicity_cochairs1,
+		mapping.publicity_cochairs2,
+		mapping.publicity_cochairs3
 	];
 	
-	//Technology Co-Chairs: (Pending confirmation)
+	//Technology Co-Chairs: 
 	var technology_cochairs = [
-		'Chen, Hailiang, City University of Hong Kong',
-	    'Li, Xin, City University of Hong Kong',
-	    'Liu, Ying, California State University, Long Beach, USA'
+		mapping.technology_cochairs1,
+		mapping.technology_cochairs2,
+		mapping.technology_cochairs3
 	];
 
-	//Platform Co-Chairs: (Pending confirmation)
+	//Platform Co-Chairs: 
 	var platform_cochairs = [
-		'Fan, Shaokun, West Texas A&M University, USA',
-	    'Kang, Lele, Nanjing University, China',
-	    'Zhao, J. Leon, City University of Hong Kong'
+		mapping.platform_cochairs1,
+		mapping.platform_cochairs2,
+		mapping.platform_cochairs3
 	];
 	
 	//Web Masters: 
 	var web_masters = [
-		'Bian, Yiyang, City University of Hong Kong',
-	    'Ilk, Noyan, Florida State University, USA',
-	    'Jia, Guochao, Nanjing University, China'
+		mapping.web_masters1,
+		mapping.web_masters2,
+		mapping.web_masters3
 	];
 	
+	//Advisory Committee: (Pending confirmation)
+	var advisory_committee = [
+		mapping.advisory_committee1,
+		mapping.advisory_committee2,
+		mapping.advisory_committee3,
+		mapping.advisory_committee4,
+		mapping.advisory_committee5,
+		mapping.advisory_committee6,
+		mapping.advisory_committee7,
+		mapping.advisory_committee8,
+		mapping.advisory_committee9,
+		mapping.advisory_committee10,
+		mapping.advisory_committee11,
+		mapping.advisory_committee12,
+		mapping.advisory_committee13,
+		mapping.advisory_committee14,
+		mapping.advisory_committee15,
+		mapping.advisory_committee16,
+		mapping.advisory_committee17,
+		mapping.advisory_committee18,
+		mapping.advisory_committee19,
+		mapping.advisory_committee20
+	];
+
 	//Program Committee (Incomplete):
 	var program_committee = [
-		'Abbasi, Ahmed, University of Virginia, USA',
-		'Chau, Michael, University of Hong Kong',
-		'Chen, Hailiang, City University of Hong Kong',
-		'Deokar, Amit, Penn State University, USA',
-		'Dou, Wanchun, Nanjing University, China',
-		'Fan, Ming, University of Washington, USA',
-		'Fang, Xiao, University of Delaware, USA',
-		'Guo, Xunhua, Tsinghua University, China',
-		'Hu, Daning, University of Zurich, Switzerland ',
-		'Huang, Liqiang, Zhejiang University, China',
-		'Ilk, Noyan, Florida State University, USA',
-		'Kang, Lele, Nanjing University, China',
-		'Lang, Karl, City University of New York, USA',
-		'Li, Qing, City University of Hong Kong',
-		'Li, Xin, City University of Hong Kong',
-		'Liang, Huigang, East Carolina University, USA',
-		'Lin, Lihui, Tsinghua University, China ',
-		'Lin, Mingfeng, University of Arizona, USA',
-		'Liu, Manlu, Rochester Institute of Technology, USA',
-		'Liu, Ying, California State University, Long Beach, USA',
-		'Fan, Shaokun, West Texas A&M University, USA',
-		'Sarnikar, Surendra, South Dakota University, USA ',
-		'Shan, Jay, University of Cincinnati, USA',
-		'Sun, Heshan, Clemson University, USA',
-		'Wang, Alan, Virginia Polytechnic Institute and State University, USA ',
-		'Wang, Chong Alex, City University of Hong Kong',
-		'Wang, Xiang, Nanjing University, China',
-		'Wang, Yonggui, GTA Corporation, China',
-		'Wei, Qiang, Tsinghua University, China',
-		'Wong, Michael, City University of Hong Kong',
-		'Wu, D.J., Georgia Institute of Technology, USA',
-		'Wu, Ji, Sun Yat-sen University, Guangzhou, China',
-		'Xitong Li, HEC Paris, France',
-		'Xu, Dongming, University of Queensland, Australia',
-		'Xu, Jennifer, Bentley University, USA',
-		'Xu, Kaiquan, Nanjing University, China',
-		'Xu, Lizhen, Georgia Institute of Technology, USA',
-		'Yang, S. Alex, London School of Business, UK ',
-		'Yue, Wei Thoo, City University of Hong Kong',
-		'Zhang, Bin, University of Arizona, USA ',
-		'Zhang, Han, Georgia Institute of Technology, USA',
-		'Zhao, Kang, University of Iowa, USA',
-		'Zhao, Min, University of Wisconsin-Milwaukee, USA',
-		'Zhu, Qinghua, Nanjing University, China'
+		mapping.program_committee1,
+		mapping.program_committee2,
+		mapping.program_committee3,
+		mapping.program_committee4,
+		mapping.program_committee5,
+		mapping.program_committee6,
+		mapping.program_committee7,
+		mapping.program_committee8,
+		mapping.program_committee9,
+		mapping.program_committee10,
+		mapping.program_committee11,
+		mapping.program_committee12,
+		mapping.program_committee13,
+		mapping.program_committee14,
+		mapping.program_committee15,
+		mapping.program_committee16,
+		mapping.program_committee17,
+		mapping.program_committee18,
+		mapping.program_committee19,
+		mapping.program_committee20,
+		mapping.program_committee21,
+		mapping.program_committee22,
+		mapping.program_committee23,
+		mapping.program_committee24,
+		mapping.program_committee25,
+		mapping.program_committee26,
+		mapping.program_committee27,
+		mapping.program_committee28,
+		mapping.program_committee29,
+		mapping.program_committee30,
+		mapping.program_committee31,
+		mapping.program_committee32,
+		mapping.program_committee33,
+		mapping.program_committee34,
+		mapping.program_committee35,
+		mapping.program_committee36,
+		mapping.program_committee37,
+		mapping.program_committee38,
+		mapping.program_committee39,
+		mapping.program_committee40,
+		mapping.program_committee41,
+		mapping.program_committee42,
+		mapping.program_committee43,
+		mapping.program_committee44,
+		mapping.program_committee45,
+		mapping.program_committee46,
+		mapping.program_committee47,
+		mapping.program_committee48,
+		mapping.program_committee49,
+		mapping.program_committee50
 	];
 	
 	var Group = function(title, persons) {
@@ -178,22 +194,22 @@
 	}
 	
 	var $committeeView = $('.committee-view');
-	$committeeView.append('<h1>Conference Organization</h1>');
-	$committeeView.append(Group('Conference Co-Chairs:', conference_cochairs));
-	$committeeView.append(Group('Program Co-Chairs:', program_cochairs));
-	$committeeView.append(Group('Honorary Co-Chairs: (Pending confirmation)', honorary_cochairs));
-	$committeeView.append(Group('Advisory Committee: (Pending confirmation)', advisory_committee));
-	$committeeView.append(Group('Industry Co-Chairs: (Pending confirmation)', industry_cochairs));
-	$committeeView.append(Group('Collaborative Co-Chairs: (Pending confirmation)', collaborative_cochairs)); 
-	$committeeView.append(Group('Research Camp Co-Chairs: (Pending confirmation)', research_camp_cochairs));  
-	$committeeView.append(Group('Faculty Co-Chairs: (Pending confirmation)', faculty_cochairs));
-	$committeeView.append(Group('Student Co-Chairs: (Pending confirmation)', student_cochairs));
-	$committeeView.append(Group('Publicity Co-Chairs: (Pending confirmation)', publicity_cochairs));
-	$committeeView.append(Group('Technology Co-Chairs: (Pending confirmation)', technology_cochairs));
-	$committeeView.append(Group('Platform Co-Chairs: (Pending confirmation)', platform_cochairs)); 
-	$committeeView.append(Group('Web Masters:', web_masters));
-	$committeeView.append(Group('Program Committee: (Incomplete)', program_committee));
+	$committeeView.append('<h1>' + mapping.org_title + '</h1>');
+	$committeeView.append(Group(mapping.conference_cochairs_title, conference_cochairs));
+	$committeeView.append(Group(mapping.program_cochairs_title, program_cochairs));
+	$committeeView.append(Group(mapping.honorary_cochairs_title, honorary_cochairs));
+	$committeeView.append(Group(mapping.industry_cochairs_title, industry_cochairs));
+	$committeeView.append(Group(mapping.competition_cochairs_title, competition_cochairs));
+	$committeeView.append(Group(mapping.sponsorship_cochairs_title, sponsorship_cochairs));
+	$committeeView.append(Group(mapping.collaborative_cochairs_title, collaborative_cochairs)); 
+	$committeeView.append(Group(mapping.research_camp_cochairs_title, research_camp_cochairs));  
+	$committeeView.append(Group(mapping.faculty_cochairs_title, faculty_cochairs));
+	$committeeView.append(Group(mapping.student_cochairs_title, student_cochairs));
+	$committeeView.append(Group(mapping.publicity_cochairs_title, publicity_cochairs));
+	$committeeView.append(Group(mapping.technology_cochairs_title, technology_cochairs));
+	$committeeView.append(Group(mapping.platform_cochairs_title, platform_cochairs)); 
+	$committeeView.append(Group(mapping.web_masters_title, web_masters));
+	$committeeView.append(Group(mapping.advisory_committee_title, advisory_committee));
+	$committeeView.append(Group(mapping.program_committee_title, program_committee));
 	
-	//初始化页面顶部和底部
-	initHeaderAndFooter();
 })(window);

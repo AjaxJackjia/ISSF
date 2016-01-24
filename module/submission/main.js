@@ -1,52 +1,57 @@
 (function(win){
-	//设置语言
-	var locale = sessionStorage.getItem('lang') || 'en-us';
 	var mapping = i18n_about_page[locale];
 	
 	//设置内容
-	//subpage - call for paper
-	var topics = [
-		'Anti-money laundering',
-		'Best financial practices in big data implementation',
-		'Big data for corporate finance',
-		'Big data for financial risk management ',
-		'Big data for portfolio analysis ',
-		'Big data visualization for finance ',
-		'Bitcoin and virtual money ',
-		'Complex analytics in big data',
-		'Data quality for complex financial applications',
-		'Detecting abnormality in financial big data ',
-		'Fraud detection in financial big data ',
-		'Integration of structured and unstructured financial data ',
-		'Internet insurance ',
-		'Mobile payment technologies ',
-		'Network analytics in finance ',
-		'Predictive analytics in financial services',
-		'Scalable cloud data for finance ',
-		'Security control in big data finance',
-		'Time series trading data management and analysis',
-		'High frequency financial trading',
-		'Privacy Preservation in financial big data',
-		'Data cleaning in financial big data',
-		'Financial supply chain ',
-		'Internet wealth management',
-		'Governance of big data finance',
-	];
+	$('.papers-title').html(mapping.title);
+	$('#cfp_title').html(mapping.cfp_title);
+	$('#ps_title').html(mapping.ps_title);
+	$('#cfp_sub_title').html(mapping.cfp_sub_title);
 
-	$.each(topics, function(index, value) {
-		$('.topics').append('<li class="topic">' + value + '</li>');
-	});
-
-	$('.important-dates > h3').html(mapping.date_title);
+	$('.important-dates > h3').html(mapping.important_dates_sub_title);
 	$('#date1').html(mapping.date1);
 	$('#date2').html(mapping.date2);
 	$('#date3').html(mapping.date3);
 	$('#date4').html(mapping.date4);
 	$('#date5').html(mapping.date5);
 
-	//subpage - submission
+	//subpage - call for paper
+	var topics = [
+		mapping.tp1,
+		mapping.tp2,
+		mapping.tp3,
+		mapping.tp4,
+		mapping.tp5,
+		mapping.tp6,
+		mapping.tp7,
+		mapping.tp8,
+		mapping.tp9,
+		mapping.tp10,
+		mapping.tp11,
+		mapping.tp12,
+		mapping.tp13,
+		mapping.tp14,
+		mapping.tp15,
+		mapping.tp16,
+		mapping.tp17,
+		mapping.tp18,
+		mapping.tp19,
+		mapping.tp20,
+		mapping.tp21,
+		mapping.tp22,
+		mapping.tp23,
+		mapping.tp24,
+		mapping.tp25
+	];
 
-	
-	//初始化页面顶部和底部
-	initHeaderAndFooter();
+	$.each(topics, function(index, value) {
+		$('.topics').append('<li class="topic">' + value + '</li>');
+	});
+
+	//subpage - submission
+	$('#submission_title').html(mapping.submission_title);
+	$('#paper_position_due').html(mapping.paper_position_due);
+	$('#easychair').html(mapping.easychair);
+	$('#formatting_title').html(mapping.formatting_title);
+	$('#formatting_content').html(mapping.formatting_content);	
+
 })(window);

@@ -1,9 +1,11 @@
 (function(win){
-	//设置语言
-	var locale = sessionStorage.getItem('lang') || 'en-us';
 	var mapping = i18n_about_page[locale];
 	
 	//设置内容
+	$('.guide-view > h1').html(mapping.title);
+	$('#agenda_title').html(mapping.agenda);
+	$('#general_title').html(mapping.general_info);
+	
 	//subpage - arrangements
 	var arrangements = [
 	    {
@@ -74,7 +76,5 @@
 	for(var i = 0;i<10;i++) {
 		$('.general-information-view').append(p1);
 	}
-	
-	//初始化页面顶部和底部
-	initHeaderAndFooter();
+
 })(window);
