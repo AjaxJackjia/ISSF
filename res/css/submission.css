@@ -48,9 +48,32 @@
 .papers-view > .papers-content
 {
 	margin: 0 150px;
+	min-height: 500px;
 }
 
 .papers-view > .papers-content > .tab-pane
 {
 	padding: 20px 10px;
+}
+
+.papers-view > .papers-content .call-for-papers-view > .topics-panel,
+.papers-view > .papers-content .call-for-papers-view > .important-dates,
+.papers-view > .papers-content .paper-submission-view > .submission
+{
+	padding: 0 100px;
+	margin-bottom: 30px;
+}
+
+.papers-view > .papers-content .call-for-papers-view > .topics-panel > .topics > li,
+.papers-view > .papers-content .call-for-papers-view > .important-dates > .dates > li,
+.papers-view > .papers-content .paper-submission-view > .submission > .submission-detail > li
+{
+	padding: 4px 0;
+	font-size: 16px;
+}
+
+.papers-view > .papers-content .paper-submission-view > .submission > .submission-detail > li > a
+{
+	font-size: 18px;
+	font-weight: 600;
 }

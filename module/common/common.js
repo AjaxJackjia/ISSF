@@ -42,10 +42,9 @@ var generateFooter = function() {
 			   '		<div class="nav-content-item">The College of Business, City University of Hong Kong</div>' + 
 			   '	</li>' + 
 			   '	<li> ' + 
-			   '		<div class="nav-content-item">Tel 8888-8888888</div>' + 
-			   '		<div class="nav-content-item">Tel 8888-8888888</div>' + 
-			   '		<div class="nav-content-item">Fax 8888-8888888</div>' + 
-			   '		<div class="nav-content-item">Email 8888-8888888</div>' + 
+			   '		<div class="nav-content-item">Tel 0755-86581690</div>' + 
+			   '		<div class="nav-content-item">Fax 0755-86581690</div>' + 
+			   '		<div class="nav-content-item">Email <a href="mailto:2016issf@gmail.com">2016issf@gmail.com</a></div>' + 
 			   '	</li>' + 
 			   '	<li> ' + 
 			   '		<img class="nav-content-img" src="res/images/img-ewm.png"/>' + 
