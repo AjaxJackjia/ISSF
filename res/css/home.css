@@ -163,8 +163,7 @@
 .home-view > .sponsors  > .container.padded 
 {
 	padding: 50px 0px;
-	min-width: 800px;
-	max-width: 1100px;
+	width: 800px;
 }
 
 .home-view > .sponsors  > .container.padded > h3
@@ -174,26 +173,43 @@
 
 .home-view > .sponsors  > .container.padded > .brands
 {
-	height: 220px;
-	padding: 15px;
+	height: 130px;
+	margin-top: 5px;
 }
 
 .home-view > .sponsors  > .container.padded > .brands > .brand
 {
+	float: left;
 	display: inline-block;
-	padding: 15px;
-	width: 19%;
-	height: 100%;
+	margin: 0 4px;
 }
 
 .home-view > .sponsors  > .container.padded > .brands > .brand > a
 {
 	display: block;
+	margin-top: 15px;
 }
 
 .home-view > .sponsors  > .container.padded > .brands > .brand > a > img
 {
-	width: 180px;
+	max-height: 100px;
+}
+
+.home-view > .sponsors  > .container.padded > .brands > .brand > a > img.epic
+{
+	width: 230px;
+}
+
+.home-view > .sponsors  > .container.padded > .brands > .brand > a > img.sri
+{
+	margin-top: -5px;
+	width: 230px;
+}
+
+.home-view > .sponsors  > .container.padded > .brands > .brand > a > img.cgif
+{
+	width: 205px;
+	margin-top: 15px;
 }
 
 /* home view format end */

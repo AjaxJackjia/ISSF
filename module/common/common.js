@@ -63,18 +63,14 @@ var generateHeader = function() {
 
 	var menuIndex = function() {
 		var href = location.href;
-		if(href == 'index') {
+		var menu = href.substring(href.lastIndexOf('/')+1);
+		if(menu == '') {
 			return 0;
-		}else if(href == 'about') {
-			return 1;
-		}else if(href == 'committees') {
-			return 2;
-		}else if(href == 'submission') {
-			return 3;
-		}else if(href == 'guide') {
-			return 4;
-		}else if(href == 'registration') {
-			return 5;
+		}
+		for(var index = 0;index<6;index++) {
+			if(menu == nav_value[index]) {
+				return index;
+			}
 		}
 	};
 	
