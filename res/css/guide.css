@@ -131,3 +131,10 @@
 	width: 280px;
 }
 /* agenda view end */
+
+.general-information-view
+{
+	padding: 0 200px;
+  	margin-bottom: 30px;
+  	font-size: 16px;
+}

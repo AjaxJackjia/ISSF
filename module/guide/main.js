@@ -72,9 +72,17 @@
 	}
 	
 	//subpage - general information
-	var p1 = 'Big data have been embraof this workshop tract (up to three pages). ';
-	for(var i = 0;i<10;i++) {
-		$('.general-information-view').append(p1);
-	}
+	var hotel_tpl = '<b>Option A: New Year Hotel, 4 star</b><br/>' + 
+					'Distance from Conferece Venue: 1.7 Kilometre; <br/>' + 
+					'Reserve from Ctrip.com: <a href="http://hotels.ctrip.com/hotel/57033.html?allianceid=20407&sid=451676&ouid=000401app-&utm_medium=&utm_campaign=&utm_source=&isctrip=#bd=baidu_map" target="_blank">New Year Hotel</a> <br/>' + 
+					'More informaiton could get from <a href="http://www.sznewyearhotel.com/en/Home.aspx" target="_blank">click</a> <br/><br/><br/>' + 
+					'<b>Option B: Grand View Hotel, 4 star</b><br/>' + 
+					'Distance from Conferece Venue: 1.6 Kilometre;  <br/>' + 
+					'Reserve from Ctrip.com: <a href="http://hotels.ctrip.com/hotel/533687.html?allianceid=20407&sid=451676&ouid=000401app-&utm_medium=&utm_campaign=&utm_source=&isctrip=#bd=baidu_map" target="_blank">Grand View Hotel</a> <br/><br/><br/>' + 
+					'<b>Option C: Motel 268 Shenzhen Science Park Branch</b><br/>' + 
+					'Distance from Conferece Venue: 1.7 Kilometre;  <br/>' + 
+					'Reserve from Ctrip.com: <a href="http://hotels.ctrip.com/hotel/428322.html?allianceid=20407&sid=451676&ouid=000401app-&utm_medium=&utm_campaign=&utm_source=&isctrip=#bd=baidu_map" target="_blank">Motel 268</a> <br/><br/><br/>';
+	
+	$('.general-information-view').append(hotel_tpl);
 
 })(window);
