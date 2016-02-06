@@ -112,7 +112,7 @@ var generateFooter = function() {
 			   '		<div class="nav-content-item">' + i18n_header_footer[locale]['email'] + ' <a href="mailto:2016issf@gmail.com">2016issf@gmail.com</a></div>' + 
 			   '	</li>' + 
 			   '	<li> ' + 
-			   '		<img class="nav-content-img" src="res/images/img-ewm.png"/>' + 
+			   '		<img class="nav-content-img" src="res/images/website-url.png"/>' + 
 			   '	</li>' + 
 			   '</ul>';
 	
