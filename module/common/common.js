@@ -99,7 +99,7 @@ var generateFooter = function() {
 	var nav =  '<ul class="nav nav-title">' + 
 			   '	<li><h3>' + i18n_header_footer[locale]['host'] + '</h3></li>' + 
 			   '	<li><h3>' + i18n_header_footer[locale]['contact'] + '</h3></li>' + 
-			   '	<li><h3>' + i18n_header_footer[locale]['wechat'] + '</h3></li>' + 
+			   //'	<li><h3>' + i18n_header_footer[locale]['wechat'] + '</h3></li>' + 
 			   '</ul>' + 
 			   '<ul class="nav nav-content">' + 
 			   '	<li> ' + 
@@ -111,9 +111,9 @@ var generateFooter = function() {
 			   '		<div class="nav-content-item">' + i18n_header_footer[locale]['fax'] + ' 0755-86581690</div>' + 
 			   '		<div class="nav-content-item">' + i18n_header_footer[locale]['email'] + ' <a href="mailto:2016issf@gmail.com">2016issf@gmail.com</a></div>' + 
 			   '	</li>' + 
-			   '	<li> ' + 
-			   '		<img class="nav-content-img" src="res/images/website-url.png"/>' + 
-			   '	</li>' + 
+			   //'	<li> ' + 
+			   //'		<img class="nav-content-img" src="res/images/website-url.png"/>' + 
+			   //'	</li>' + 
 			   '</ul>';
 	
 	var copyright =    '<div class="copyright">' + 
