@@ -187,12 +187,6 @@ body > .container
 	vertical-align: top;
 }
 
-.footer > .wrapper > .nav-content > li > .nav-content-img
-{
-	width: 120px;
-	height: 120px;
-}
-
 .footer > .wrapper > .copyright
 {
 	margin: 0 auto;
