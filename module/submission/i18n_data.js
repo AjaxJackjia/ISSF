@@ -4,7 +4,7 @@ var i18n_about_page = {
 		'cfp_title': 'Call for Papers',
 		'ps_title': 'Paper Submission',
 
-		'cfp_sub_title': 'Topics of Position Papers: (Tentative)',
+		'cfp_sub_title': 'Suggested Topics of Position Papers (but not limited to):',
 		'tp1': 'Anti-money laundering',
 		'tp2': 'Best financial practices in big data implementation ',
 		'tp3': 'Big data for corporate finance',
@@ -42,7 +42,7 @@ var i18n_about_page = {
 		'paper_position_due': 'Position Papers due: February 29, 2016',
 		'easychair': 'Please click <a href="https://easychair.org/conferences/?conf=issf2016" target="_blank">The EasyChair submission system</a>',
 		'formatting_title': 'Formatting:',
-		'formatting_content': '3-5 pages in the 2-column IEEE format'
+		'formatting_content': '<a href="res/file/ISSF\'16-IEEEPaperTemplat.rtf" target="_blank">3-5 pages in the 2-column IEEE format</a>'
 	},
 	
 	'zh-cn': {
@@ -88,6 +88,6 @@ var i18n_about_page = {
 		'paper_position_due': '论文投稿截止日期：2016年2月29日',
 		'easychair': '请点击<a href="https://easychair.org/conferences/?conf=issf2016" target="_blank">EasyChair论文提交系统</a>',
 		'formatting_title': '格式:',
-		'formatting_content': '3至5页IEEE两栏格式'		
+		'formatting_content': '<a href="res/file/ISSF\'16-IEEEPaperTemplat.rtf" target="_blank">3至5页IEEE两栏格式</a>'		
 	}
 };
