@@ -82,8 +82,30 @@ var generateHeader = function() {
 			$nav.append('<li><a href="'+ nav_value[index] +'">' + nav_key[index] + '</a></li>');
 	});
 	
-	var $brand = $('<a class="brand" href="index.html">');
-	$brand.append('<span title="' + i18n_header_footer[locale]['issf'] + '">ISSF 2016</span>');
+	var genLanguageItem = function() {
+		var $tpl = $('<div class="switch-lang dropdown">');
+		var $tplBtn = $('<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">');
+		var $tplList = $('<ul class="dropdown-menu" aria-labelledby="dropdownMenu">');
+		
+		if(locale == 'en-us') {
+			$tplBtn.append('<span class="current-lang lang-item en-us"></span> <span class="caret"></span>');
+			$tplList.append('<li><span class="lang-item zh-cn"></span></li>');
+		}else{
+			$tplBtn.append('<span class="current-lang lang-item zh-cn"></span> <span class="caret"></span>');
+			$tplList.append('<li><span class="lang-item en-us"></span></li>');
+		}
+		
+		$tpl.append($tplBtn);
+		$tpl.append($tplList);
+		
+		return $tpl[0];
+	};
+	var $switchLanguage = genLanguageItem();
+	
+	var $brand = $('<div class="brand">');
+	$brand.append($switchLanguage);
+	$brand.append('<a title="' + i18n_header_footer[locale]['issf'] + '" href="index.html">ISSF 2016</a>');
+	
 	
 	var $header = $('<header id="header" class="header header-fixed">');
 	var $headerWrapper = $('<div class="wrapper">');
@@ -141,7 +163,7 @@ var generateFooter = function() {
 	//add switch language function
 	var $copyright = $(copyright);
 	var $switchLanguage = genLanguageItem();
-	$copyright.append($switchLanguage);
+	//$copyright.append($switchLanguage);
 
 	var $footer = $('<footer id="footer" class="footer">');
 	var $footerWrapper = $('<div class="wrapper">');

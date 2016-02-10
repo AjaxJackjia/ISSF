@@ -77,20 +77,82 @@ body > .container
 	margin: 0;
 	margin-left: 60px;
 	padding: 0;
-	width: 200px;
+	width: 240px;
 	height: 70px;
-	text-decoration: none;
 }
 
-.header > .wrapper > .brand > span
+.header > .wrapper > .brand > a
 {
-	display: block;
+	display: inline-block;
 	margin: 0;
+	margin-left: 5px;
 	padding: 0;
-	width: 100%;
 	height: 100%;
 	line-height: 70px;
 	font-size: 35px;
+	text-decoration: none;
+}
+
+.header > .wrapper > .brand > .switch-lang
+{
+	display: inline-block;
+	margin-left: 15px;
+	height: 25px;
+}
+
+.header > .wrapper > .brand > .switch-lang .lang-item
+{
+	background-size: 16px 80px;
+	color: #45474b;
+	display: inline-block;
+	padding: 0 10px 0 24px;
+	height: 30px;
+	line-height: 32px;
+}
+
+.header > .wrapper > .brand > .switch-lang > button
+{
+	margin-top: -12px;
+	width: 45px;
+	padding: 0px 10px;
+	background-color: #eee;
+	border: none;
+}
+
+.header > .wrapper > .brand > .switch-lang > ul.dropdown-menu
+{
+	width: 45px;
+	min-width: 45px;
+	padding: 0;
+}
+
+.header > .wrapper > .brand > .switch-lang > ul.dropdown-menu > li
+{
+	width: 45px;
+	padding: 0px 14px;
+	cursor: pointer;
+}
+
+.header > .wrapper > .brand > .switch-lang > ul.dropdown-menu > li > span
+{
+	width: 100%;
+}
+
+.header > .wrapper > .brand > .switch-lang .lang-item.en-us
+{
+	background: url(../images/lang.png) 0 -22px no-repeat;
+}
+
+.header > .wrapper > .brand > .switch-lang .lang-item.zh-cn
+{
+	background: url(../images/lang.png) 0 8px no-repeat;
+}
+
+.header > .wrapper > .brand > .switch-lang > button > .caret
+{
+	display: inline-block;
+	margin-left: -15px;
+    margin-top: -17px;
 }
 
 .header > .wrapper > .nav
@@ -196,13 +258,6 @@ body > .container
 .footer > .wrapper > .copyright span
 {
 	font-weight: 800;
-}
-
-.footer > .wrapper > .copyright > .switch-lang
-{
-	display: inline-block;
-	margin-left: 15px;
-	height: 25px;
 }
 
 .footer > .wrapper > .copyright > .switch-lang
