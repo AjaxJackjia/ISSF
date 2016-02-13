@@ -12,9 +12,9 @@ var i18n_about_page = {
 		'p6': 'The summit program will be created based partially on the outcomes of various interactions in these platforms.  For instance, <span class="bold">panel sessions could be created on hot and potentially controversial issues surfaced in various social interactions</span>. ',
 		'date_title': 'Important Dates:',
 		'date1': 'Theme-Based Social Platforms Open: February 15, 2016',
-		'date2': 'Position Papers due: February 29, 2016 (3-5 pages in the 2-column IEEE format)',
-		'date3': 'Acceptance Notice: March 7, 2016',
-		'date4': 'Camera Ready Papers due: March 15, 2016',
+		'date2': 'Position Papers due: March 13, 2016 (3-5 pages in the 2-column IEEE format)',
+		'date3': 'Acceptance Notice: March 27, 2016',
+		'date4': 'Camera Ready Papers due: April 15, 2016',
 		'date5': 'Program Announcement Online: March 25, 2016'
 	},
 	
@@ -31,9 +31,9 @@ var i18n_about_page = {
 		'p6': '峰会还将依据会议前期所产生的成果来创建相关峰会议题。比如，专题讨论会的主题可能会是平台社会互动过程中较热门的和可能存在争议的问题。',
 		'date_title': '重要日期',
 		'date1': '在线平台开放时间：2016年2月15日',
-		'date2': '论文投稿截止日期：2016年2月29日 ',
-		'date3': '论文录用通知日期：2016年3月7日',
-		'date4': '论文正稿提交日期：2016年3月15日',
+		'date2': '论文投稿截止日期：2016年3月13日 ',
+		'date3': '论文录用通知日期：2016年3月27日',
+		'date4': '论文正稿提交日期：2016年4月15日',
 		'date5': '在线项目公告日期：2016年3月25日'
 	}
 };

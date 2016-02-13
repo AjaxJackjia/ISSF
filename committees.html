@@ -21,7 +21,25 @@
 	</head>
 	<body>
 		<div class="container">
-			<div class="committee-view"></div>
+			<div class="committee-view">
+				<h1 class="title"></h1>
+				<ul class="committee-menu nav nav-tabs" role="tablist">
+				  <li role="presentation" class="active">
+						<a id="co_title" href="#co" aria-controls="co" role="tab" data-toggle="tab">Conference Organization</a> 
+				  </li>
+				  <li role="presentation">
+				  		<a id="ac_title" href="#ac" aria-controls="ac" role="tab" data-toggle="tab">Advisory Committee</a> 
+				  </li>
+				  <li role="presentation">
+				  		<a id="pc_title" href="#pc" aria-controls="pc" role="tab" data-toggle="tab">Program Committee</a> 
+				  </li>
+				</ul>
+				<div class="committee-content tab-content">
+				  <div role="tabpanel" class="tab-pane fade in active" id="co"></div>
+				  <div role="tabpanel" class="tab-pane fade" id="ac"></div>
+				  <div role="tabpanel" class="tab-pane fade" id="pc"></div>
+				</div>	
+			</div>
 		</div>
 		
 		<!-- module js -->

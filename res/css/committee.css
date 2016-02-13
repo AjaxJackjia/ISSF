@@ -12,20 +12,63 @@
 	text-align: center;
 }
 
-.committee-view > .group
+.committee-view > .committee-menu
 {
-	padding: 0 150px;
+	margin: 0 auto;
+	margin-left: 150px;
+	margin-right: 150px;
+	text-align: center;
+}
+
+.committee-view > .committee-menu.nav-tabs > li
+{
+	display: inline-block;
+	float: none;
+	width: 270px;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.committee-view > .committee-menu.nav-tabs > li.active
+{
+	border-bottom: 3px solid #23a8f5;
+}
+
+.committee-view > .committee-menu.nav-tabs > li > a
+{
+	border: none;
+}
+
+.committee-view > .committee-menu.nav-tabs > li > a:hover
+{
+	background-color: #fff;
+}
+
+.committee-view > .committee-content
+{
+	margin: 0 150px;
+	min-height: 500px;
+}
+
+.committee-view > .committee-content > .tab-pane
+{
+	padding: 20px 10px;
+}
+
+.committee-view > .committee-content > .tab-pane > .group
+{
+	padding: 0 115px;
 	margin-bottom: 30px;
 }
 
-.committee-view > .group > .title
+.committee-view > .committee-content > .tab-pane > .group > .title
 {
 	margin-bottom: 5px;
 	font-size: 20px;
 	font-weight: 600;
 }
 
-.committee-view > .group > .person
+.committee-view > .committee-content > .tab-pane > .group > .person
 {
 	margin: 3px 0;
 	padding-left: 20px;

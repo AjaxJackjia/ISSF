@@ -195,7 +195,7 @@ body > .container
 /* footer format begin */
 .footer
 {
-	height: 280px;
+	height: 230px;
 	color: black;
 	background: #eee;
 	
@@ -226,7 +226,7 @@ body > .container
 {
 	display: inline-block;
 	padding: 0 40px;
-	width: 30%;
+	width: 40%;
 	text-align: center;
 }
 
@@ -241,7 +241,7 @@ body > .container
 
 .footer > .wrapper > .nav-content
 {
-	height: 150px;
+	height: 100px;
 }
 
 .footer > .wrapper > .nav-content > li

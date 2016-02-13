@@ -7,6 +7,8 @@ var i18n_about_page = {
 		'program_cochairs1': 'Lau, Raymond, City University of Hong Kong',
 		'program_cochairs2': 'Ye, Qiang, Harbin Institute of Technology, China',
 		'program_cochairs3': 'Zhang, Dongsong, University of Maryland Baltimore County, USA',
+		'program_cochairs4': 'Wang, Jue, University of Chinese Academy of Sciences, China',
+		'program_cochairs5': 'Li, Xitong, HEC Paris, France',
 		
 		//Honorary Co-Chairs: 
 		'honorary_cochairs1': 'Krishnan, Ramayya, Carnegie Mellon University, USA',
@@ -81,6 +83,9 @@ var i18n_about_page = {
 		'advisory_committee18': 'Wei, K.K., City University of Hong Kong',
 		'advisory_committee19': 'Westland, Chris, University of Illinois at Chicago, USA ',
 		'advisory_committee20': 'Xie, Kang, Sun Yat-sen University, Guangzhou, China',
+		'advisory_committee21': 'Ling, Hong, Fudan University, China',
+		'advisory_committee22': 'Wang, Shouyang, University of Chinese Academy of Sciences, China',
+		'advisory_committee23': 'Zhang, Wei, Tianjin University, China',
 
 		'program_committee1': 'Abbasi, Ahmed, University of Virginia, USA',
 		'program_committee2': 'Chau, Michael, University of Hong Kong',
@@ -133,7 +138,10 @@ var i18n_about_page = {
 		'program_committee49': 'Zhao, Min, University of Wisconsin-Milwaukee, USA',
 		'program_committee50': 'Zhu, Qinghua, Nanjing University, China',
 
-		'org_title': 'Conference Organization',
+		'org_title': 'ISSF 2016 Committees',
+		'org_sub_title_co': 'Conference Organization',
+		'org_sub_title_ac': 'Advisory Committee',
+		'org_sub_title_pc': 'Program Committee',
 		'conference_cochairs_title': 'Conference Co-Chairs:',
 		'program_cochairs_title': 'Program Co-Chairs:',
 		'honorary_cochairs_title': 'Honorary Co-Chairs:', 
@@ -160,6 +168,8 @@ var i18n_about_page = {
 		'program_cochairs1': 'Lau, Raymond, City University of Hong Kong 香港城市大学',
 		'program_cochairs2': 'Ye, Qiang, Harbin Institute of Technology, China  哈尔滨工业大学',
 		'program_cochairs3': 'Zhang, Dongsong, University of Maryland Baltimore County, USA  美国马里兰大学',
+		'program_cochairs4': 'Wang, Jue, University of Chinese Academy of Sciences, China 中国科学院大学',
+		'program_cochairs5': 'Li, Xitong, HEC Paris, France 巴黎高等商学院',
 		
 		//Honorary Co-Chairs: 
 		'honorary_cochairs1': 'Krishnan, Ramayya, Carnegie Mellon University, USA 美国卡耐基梅隆大学',
@@ -234,7 +244,10 @@ var i18n_about_page = {
 		'advisory_committee18': 'Wei, K.K., City University of Hong Kong',
 		'advisory_committee19': 'Westland, Chris, University of Illinois at Chicago, USA ',
 		'advisory_committee20': 'Xie, Kang, Sun Yat-sen University, Guangzhou, China',
-
+		'advisory_committee21': 'Ling, Hong, Fudan University, China',
+		'advisory_committee22': 'Wang, Shouyang, University of Chinese Science Academy, China',
+		'advisory_committee23': 'Zhang, Wei, Tianjin University, China',
+		
 		'program_committee1': 'Abbasi, Ahmed, University of Virginia, USA',
 		'program_committee2': 'Chau, Michael, University of Hong Kong',
 		'program_committee3': 'Chen, Hailiang, City University of Hong Kong',
@@ -286,7 +299,10 @@ var i18n_about_page = {
 		'program_committee49': 'Zhao, Min, University of Wisconsin-Milwaukee, USA',
 		'program_committee50': 'Zhu, Qinghua, Nanjing University, China',
 
-		'org_title': '会议组织机构（按姓氏拼音首字母排序）',
+		'org_title': 'ISSF 2016 组织机构（按姓氏拼音首字母排序）',
+		'org_sub_title_co': '会议组织',
+		'org_sub_title_ac': '顾问委员会',
+		'org_sub_title_pc': '程序委员会',
 		'conference_cochairs_title': '大会主席（Conference Co-Chairs）：',
 		'program_cochairs_title': '程序委员会主席（Program Co-Chairs）：',
 		'honorary_cochairs_title': '大会名誉主席（Honorary Co-Chairs）：', 

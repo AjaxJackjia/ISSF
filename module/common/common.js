@@ -13,13 +13,15 @@ var i18n_header_footer = {
 		'registration': 'Registration',
 
 		'host': 'hosts',
-		'contact': 'contact us',
+		'contact': 'Secretariat of ISSF 2016',
 		'wechat': 'official wechat',
 		'CGIF': 'Center on Global Internet Finance, City University of Hong Kong',
 		'CB': 'The College of Business, City University of Hong Kong',
 		'tel': 'Tel',
 		'fax': 'Fax',
-		'email': 'Email'
+		'email': 'Email',
+		'address_title': 'Address',
+		'address': 'City University of Hong Kong SRI'
 	},
 	
 	'zh-cn': {
@@ -32,13 +34,15 @@ var i18n_header_footer = {
 		'registration': '注册',
 
 		'host': '主办方',
-		'contact': '联系我们',
+		'contact': 'ISSF 2016 秘书组',
 		'wechat': '官方公众号',
 		'CGIF': '香港城市大学国际互联网金融中心',
 		'CB': '香港城市大学商学院',
 		'tel': '电话',
 		'fax': '传真',
-		'email': '邮箱'
+		'email': '邮箱',
+		'address_title': '地址',
+		'address': '香港城市大学深圳研究院'
 	}
 };
 
@@ -129,9 +133,10 @@ var generateFooter = function() {
 			   '		<div class="nav-content-item">' + i18n_header_footer[locale]['CB'] + '</div>' + 
 			   '	</li>' + 
 			   '	<li> ' + 
-			   '		<div class="nav-content-item">' + i18n_header_footer[locale]['tel'] + ' 0755-86581690</div>' + 
-			   '		<div class="nav-content-item">' + i18n_header_footer[locale]['fax'] + ' 0755-86581690</div>' + 
+			   //'		<div class="nav-content-item">' + i18n_header_footer[locale]['tel'] + ' 0755-86581690</div>' + 
+			   //'		<div class="nav-content-item">' + i18n_header_footer[locale]['fax'] + ' 0755-86581690</div>' + 
 			   '		<div class="nav-content-item">' + i18n_header_footer[locale]['email'] + ' <a href="mailto:2016issf@gmail.com">2016issf@gmail.com</a></div>' + 
+			   '		<div class="nav-content-item">' + i18n_header_footer[locale]['address_title'] + ' <a href="javascript:void(0);" style="text-decoration:none;">' + i18n_header_footer[locale]['address'] + '</a></div>' + 
 			   '	</li>' + 
 			   //'	<li> ' + 
 			   //'		<img class="nav-content-img" src="res/images/website-url.png"/>' + 

@@ -67,9 +67,10 @@
 		return tpl;
 	};
 	
-	for(var arrIndex = 0;arrIndex<arrangements.length;arrIndex++) {
-		$('.arrangements').append(generateArrangement(arrangements[arrIndex]));
-	}
+	//for(var arrIndex = 0;arrIndex<arrangements.length;arrIndex++) {
+	//	$('.arrangements').append(generateArrangement(arrangements[arrIndex]));
+	//}
+	$('.arrangements').html('<h1 style="text-align: center;height: 300px;">Coming soon...</h1>');
 	
 	//subpage - general information
 	var hotel_tpl = '<b>Option A: New Year Hotel, 4 star</b><br/>' + 

@@ -13,7 +13,9 @@
 	var program_cochairs = [
 		mapping.program_cochairs1,
 		mapping.program_cochairs2,
-		mapping.program_cochairs3
+		mapping.program_cochairs3,
+		mapping.program_cochairs4,
+		mapping.program_cochairs5
 	];
 	
 	//Honorary Co-Chairs: 
@@ -123,7 +125,10 @@
 		mapping.advisory_committee17,
 		mapping.advisory_committee18,
 		mapping.advisory_committee19,
-		mapping.advisory_committee20
+		mapping.advisory_committee20,
+		mapping.advisory_committee21,
+		mapping.advisory_committee22,
+		mapping.advisory_committee23,
 	];
 
 	//Program Committee (Incomplete):
@@ -193,23 +198,33 @@
 		return tpl;
 	}
 	
-	var $committeeView = $('.committee-view');
-	$committeeView.append('<h1>' + mapping.org_title + '</h1>');
-	$committeeView.append(Group(mapping.conference_cochairs_title, conference_cochairs));
-	$committeeView.append(Group(mapping.program_cochairs_title, program_cochairs));
-	$committeeView.append(Group(mapping.honorary_cochairs_title, honorary_cochairs));
-	$committeeView.append(Group(mapping.industry_cochairs_title, industry_cochairs));
-	$committeeView.append(Group(mapping.competition_cochairs_title, competition_cochairs));
-	$committeeView.append(Group(mapping.sponsorship_cochairs_title, sponsorship_cochairs));
-	$committeeView.append(Group(mapping.collaborative_cochairs_title, collaborative_cochairs)); 
-	$committeeView.append(Group(mapping.research_camp_cochairs_title, research_camp_cochairs));  
-	$committeeView.append(Group(mapping.faculty_cochairs_title, faculty_cochairs));
-	$committeeView.append(Group(mapping.student_cochairs_title, student_cochairs));
-	$committeeView.append(Group(mapping.publicity_cochairs_title, publicity_cochairs));
-	$committeeView.append(Group(mapping.technology_cochairs_title, technology_cochairs));
-	$committeeView.append(Group(mapping.platform_cochairs_title, platform_cochairs)); 
-	$committeeView.append(Group(mapping.web_masters_title, web_masters));
-	$committeeView.append(Group(mapping.advisory_committee_title, advisory_committee));
-	$committeeView.append(Group(mapping.program_committee_title, program_committee));
+	//标题
+	$('.committee-view > .title').html(mapping.org_title);
+	$('.committee-view #co_title').html(mapping.org_sub_title_co);
+	$('.committee-view #ac_title').html(mapping.org_sub_title_ac);
+	$('.committee-view #pc_title').html(mapping.org_sub_title_pc);
+	
+	//组委会成员
+	var $co_content = $('.committee-view #co');
+	$co_content.append(Group(mapping.conference_cochairs_title, conference_cochairs));
+	$co_content.append(Group(mapping.program_cochairs_title, program_cochairs));
+	$co_content.append(Group(mapping.honorary_cochairs_title, honorary_cochairs));
+	$co_content.append(Group(mapping.industry_cochairs_title, industry_cochairs));
+	$co_content.append(Group(mapping.competition_cochairs_title, competition_cochairs));
+	$co_content.append(Group(mapping.sponsorship_cochairs_title, sponsorship_cochairs));
+	$co_content.append(Group(mapping.collaborative_cochairs_title, collaborative_cochairs)); 
+	$co_content.append(Group(mapping.research_camp_cochairs_title, research_camp_cochairs));  
+	$co_content.append(Group(mapping.faculty_cochairs_title, faculty_cochairs));
+	$co_content.append(Group(mapping.student_cochairs_title, student_cochairs));
+	$co_content.append(Group(mapping.publicity_cochairs_title, publicity_cochairs));
+	$co_content.append(Group(mapping.technology_cochairs_title, technology_cochairs));
+	$co_content.append(Group(mapping.platform_cochairs_title, platform_cochairs)); 
+	$co_content.append(Group(mapping.web_masters_title, web_masters));
+	
+	var $ac_content = $('.committee-view #ac');
+	$ac_content.append(Group(mapping.advisory_committee_title, advisory_committee));
+	
+	var $pc_content = $('.committee-view #pc');
+	$pc_content.append(Group(mapping.program_committee_title, program_committee));
 	
 })(window);
