@@ -7,8 +7,6 @@ var i18n_about_page = {
 		'program_cochairs1': 'Lau, Raymond, City University of Hong Kong',
 		'program_cochairs2': 'Ye, Qiang, Harbin Institute of Technology, China',
 		'program_cochairs3': 'Zhang, Dongsong, University of Maryland Baltimore County, USA',
-		'program_cochairs4': 'Wang, Jue, University of Chinese Academy of Sciences, China',
-		'program_cochairs5': 'Li, Xitong, HEC Paris, France',
 		
 		//Honorary Co-Chairs: 
 		'honorary_cochairs1': 'Krishnan, Ramayya, Carnegie Mellon University, USA',
@@ -137,6 +135,8 @@ var i18n_about_page = {
 		'program_committee48': 'Zhao, Kang, University of Iowa, USA',
 		'program_committee49': 'Zhao, Min, University of Wisconsin-Milwaukee, USA',
 		'program_committee50': 'Zhu, Qinghua, Nanjing University, China',
+		'program_committee51': 'Wang, Jue, University of Chinese Academy of Sciences, China',
+		'program_committee52': 'Li, Xitong, HEC Paris, France',
 
 		'org_title': 'ISSF 2016 Committees',
 		'org_sub_title_co': 'Conference Organization',
@@ -298,6 +298,8 @@ var i18n_about_page = {
 		'program_committee48': 'Zhao, Kang, University of Iowa, USA',
 		'program_committee49': 'Zhao, Min, University of Wisconsin-Milwaukee, USA',
 		'program_committee50': 'Zhu, Qinghua, Nanjing University, China',
+		'program_committee51': 'Wang, Jue, University of Chinese Academy of Sciences, China',
+		'program_committee52': 'Li, Xitong, HEC Paris, France',
 
 		'org_title': 'ISSF 2016 组织机构（按姓氏拼音首字母排序）',
 		'org_sub_title_co': '会议组织',

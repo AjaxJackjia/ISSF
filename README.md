@@ -31,12 +31,15 @@ International Summit on Smart Finance
 	
 	Camera Ready Papers due: April 15, 2016
 	
-5. 在PC中加入
+5. 在PC(program committee)中加入
 
 	A. Wang, Jue, University of Chinese Academy of Sciences, China
-	
+		
 	B. Li, Xitong, HEC Paris, France
 
+## 2016-02-14
 
+1. hosts改为CGIF, NSFC；
 
+2. 中英文转换图标改大，并且
 	

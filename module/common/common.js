@@ -16,12 +16,14 @@ var i18n_header_footer = {
 		'contact': 'Secretariat of ISSF 2016',
 		'wechat': 'official wechat',
 		'CGIF': 'Center on Global Internet Finance, City University of Hong Kong',
+		'NSFC': 'National Natural Science Foundation of China',
 		'CB': 'The College of Business, City University of Hong Kong',
 		'tel': 'Tel',
 		'fax': 'Fax',
 		'email': 'Email',
 		'address_title': 'Address',
-		'address': 'City University of Hong Kong SRI'
+		'address': 'City University of Hong Kong SRI',
+		'lang-title': '转换语言为中文'
 	},
 	
 	'zh-cn': {
@@ -37,12 +39,14 @@ var i18n_header_footer = {
 		'contact': 'ISSF 2016 秘书组',
 		'wechat': '官方公众号',
 		'CGIF': '香港城市大学国际互联网金融中心',
+		'NSFC': '中国国家自然科学基金会',
 		'CB': '香港城市大学商学院',
 		'tel': '电话',
 		'fax': '传真',
 		'email': '邮箱',
 		'address_title': '地址',
-		'address': '香港城市大学深圳研究院'
+		'address': '香港城市大学深圳研究院',
+		'lang-title': 'Change language to English'
 	}
 };
 
@@ -104,7 +108,18 @@ var generateHeader = function() {
 		
 		return $tpl[0];
 	};
-	var $switchLanguage = genLanguageItem();
+	
+	var genLanguageItem_new = function() {
+		var $tpl = $('<div class="switch-lang-new" title="' + i18n_header_footer[locale]['lang-title'] + '">');		
+		if(locale == 'en-us') {
+			$tpl.append('<img class="zh-cn" src="res/images/zh_cn.png" />');
+		}else{
+			$tpl.append('<img class="en-us" src="res/images/en_us.png" />');
+		}
+		return $tpl[0];
+	};
+	
+	var $switchLanguage = genLanguageItem_new();
 	
 	var $brand = $('<div class="brand">');
 	$brand.append($switchLanguage);
@@ -125,22 +140,16 @@ var generateFooter = function() {
 	var nav =  '<ul class="nav nav-title">' + 
 			   '	<li><h3>' + i18n_header_footer[locale]['host'] + '</h3></li>' + 
 			   '	<li><h3>' + i18n_header_footer[locale]['contact'] + '</h3></li>' + 
-			   //'	<li><h3>' + i18n_header_footer[locale]['wechat'] + '</h3></li>' + 
 			   '</ul>' + 
 			   '<ul class="nav nav-content">' + 
 			   '	<li> ' + 
 			   '		<div class="nav-content-item">' + i18n_header_footer[locale]['CGIF'] + '</div>' + 
-			   '		<div class="nav-content-item">' + i18n_header_footer[locale]['CB'] + '</div>' + 
+			   '		<div class="nav-content-item">' + i18n_header_footer[locale]['NSFC'] + '</div>' + 
 			   '	</li>' + 
 			   '	<li> ' + 
-			   //'		<div class="nav-content-item">' + i18n_header_footer[locale]['tel'] + ' 0755-86581690</div>' + 
-			   //'		<div class="nav-content-item">' + i18n_header_footer[locale]['fax'] + ' 0755-86581690</div>' + 
 			   '		<div class="nav-content-item">' + i18n_header_footer[locale]['email'] + ' <a href="mailto:2016issf@gmail.com">2016issf@gmail.com</a></div>' + 
 			   '		<div class="nav-content-item">' + i18n_header_footer[locale]['address_title'] + ' <a href="javascript:void(0);" style="text-decoration:none;">' + i18n_header_footer[locale]['address'] + '</a></div>' + 
 			   '	</li>' + 
-			   //'	<li> ' + 
-			   //'		<img class="nav-content-img" src="res/images/website-url.png"/>' + 
-			   //'	</li>' + 
 			   '</ul>';
 	
 	var copyright =    '<div class="copyright">' + 
@@ -165,6 +174,7 @@ var generateFooter = function() {
 		
 		return $tpl[0];
 	};
+	
 	//add switch language function
 	var $copyright = $(copyright);
 	var $switchLanguage = genLanguageItem();
@@ -205,10 +215,25 @@ var initHeaderAndFooter = function() {
 	headroom.init();
 
 	//switch lang
+	/*
 	$('ul.dropdown-menu > li').click(function(event) {
 		$target = $(event.target).closest('li');
 		if($target != null) {
 			if($target.find('.en-us').length > 0) {
+				sessionStorage.setItem('lang', 'en-us');
+			}else{
+				sessionStorage.setItem('lang', 'zh-cn');
+			}
+			location.reload();
+			//scroll to top
+			$('body').scrollTop(0);
+		}
+	});
+	*/
+	$('.switch-lang-new').click(function(event) {
+		$target = $(event.target).closest('img');
+		if($target != null) {
+			if($target.hasClass('en-us')) {
 				sessionStorage.setItem('lang', 'en-us');
 			}else{
 				sessionStorage.setItem('lang', 'zh-cn');

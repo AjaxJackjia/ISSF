@@ -13,9 +13,7 @@
 	var program_cochairs = [
 		mapping.program_cochairs1,
 		mapping.program_cochairs2,
-		mapping.program_cochairs3,
-		mapping.program_cochairs4,
-		mapping.program_cochairs5
+		mapping.program_cochairs3
 	];
 	
 	//Honorary Co-Chairs: 
@@ -182,7 +180,9 @@
 		mapping.program_committee47,
 		mapping.program_committee48,
 		mapping.program_committee49,
-		mapping.program_committee50
+		mapping.program_committee50,
+		mapping.program_committee51,
+		mapping.program_committee52
 	];
 	
 	var Group = function(title, persons) {
