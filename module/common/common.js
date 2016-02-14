@@ -11,6 +11,13 @@ var i18n_header_footer = {
 		'submission': 'Submission',
 		'guide': 'Guide',
 		'registration': 'Registration',
+		
+		'home_value': 'index.html',
+		'about_value': 'about.html',
+		'committees_value': 'committees.html',
+		'submission_value': 'submission.html',
+		'guide_value': 'guide.html',
+		'registration_value': 'registration.html',
 
 		'host': 'hosts',
 		'contact': 'Secretariat of ISSF 2016',
@@ -34,6 +41,13 @@ var i18n_header_footer = {
 		'submission': '论文事宜',
 		'guide': '指引',
 		'registration': '注册',
+		
+		'home_value': 'index_zh-cn.html',
+		'about_value': 'about_zh-cn.html',
+		'committees_value': 'committees_zh-cn.html',
+		'submission_value': 'submission_zh-cn.html',
+		'guide_value': 'guide_zh-cn.html',
+		'registration_value': 'registration_zh-cn.html',
 
 		'host': '主办方',
 		'contact': 'ISSF 2016 秘书组',
@@ -61,12 +75,12 @@ var generateHeader = function() {
 	];
 
 	var nav_value = [
-		'index.html',
-		'about.html',
-		'committees.html',
-		'submission.html',
-		'guide.html',
-		'registration.html'
+		i18n_header_footer[locale]['home_value'],
+		i18n_header_footer[locale]['about_value'],
+		i18n_header_footer[locale]['committees_value'],
+		i18n_header_footer[locale]['submission_value'],
+		i18n_header_footer[locale]['guide_value'],
+		i18n_header_footer[locale]['registration_value'],
 	];
 
 	var menuIndex = function() {
@@ -238,7 +252,33 @@ var initHeaderAndFooter = function() {
 			}else{
 				sessionStorage.setItem('lang', 'zh-cn');
 			}
-			location.reload();
+				
+			//refresh page according to language
+			var pageIndexBegin = location.href.lastIndexOf('/');
+			var dotBegin 	   = location.href.indexOf('.');
+			if(dotBegin <= 0) {
+				sessionStorage.setItem('lang', '');
+				location.href = location.href + 'index.html';
+			}else{
+				var base = location.href.substring(0, pageIndexBegin+1);
+				var page = location.href.substring(pageIndexBegin+1, dotBegin);
+				
+				var isChinese = page.indexOf('zh-cn') > 0 ? true : false;
+				var pageOrigin = '';
+				if(isChinese) {
+					var pageArray = page.split('_');
+					pageOrigin = pageArray[0];
+				}else{
+					pageOrigin = page;
+				}
+
+				if(locale == 'en-us') {
+					location.href = base + pageOrigin + '_zh-cn.html';
+				}else{
+					location.href = base + pageOrigin + '.html';
+				}
+			}
+
 			//scroll to top
 			$('body').scrollTop(0);
 		}
