@@ -112,9 +112,9 @@ var generateHeader = function() {
 	var genLanguageItem_new = function() {
 		var $tpl = $('<div class="switch-lang-new" title="' + i18n_header_footer[locale]['lang-title'] + '">');		
 		if(locale == 'en-us') {
-			$tpl.append('<img class="zh-cn" src="res/images/zh_cn.png" />');
+			$tpl.append('<img class="zh-cn" src="res/images/zh_cn.png" /><div class="title">&nbsp;&nbsp;中文</div>');
 		}else{
-			$tpl.append('<img class="en-us" src="res/images/en_us.png" />');
+			$tpl.append('<img class="en-us" src="res/images/en_us.png" /><div class="title">&nbsp;&nbsp;English</div>');
 		}
 		return $tpl[0];
 	};
@@ -231,7 +231,7 @@ var initHeaderAndFooter = function() {
 	});
 	*/
 	$('.switch-lang-new').click(function(event) {
-		$target = $(event.target).closest('img');
+		$target = $('.switch-lang-new > img');
 		if($target != null) {
 			if($target.hasClass('en-us')) {
 				sessionStorage.setItem('lang', 'en-us');

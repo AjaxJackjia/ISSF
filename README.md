@@ -41,5 +41,5 @@ International Summit on Smart Finance
 
 1. hosts改为CGIF, NSFC；
 
-2. 中英文转换图标改大，并且
+2. 中英文转换图标改大；
 	
