@@ -255,8 +255,8 @@ var initHeaderAndFooter = function() {
 				
 			//refresh page according to language
 			var pageIndexBegin = location.href.lastIndexOf('/');
-			var dotBegin 	   = location.href.indexOf('.');
-			if(dotBegin <= 0) {
+			var dotBegin 	   = location.href.lastIndexOf('.');
+			if(dotBegin <= pageIndexBegin) {
 				sessionStorage.setItem('lang', '');
 				location.href = location.href + 'index.html';
 			}else{
