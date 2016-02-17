@@ -137,7 +137,7 @@ var generateHeader = function() {
 	
 	var $brand = $('<div class="brand">');
 	$brand.append($switchLanguage);
-	$brand.append('<a title="' + i18n_header_footer[locale]['issf'] + '" href="index.html">ISSF 2016</a>');
+	$brand.append('<a title="' + i18n_header_footer[locale]['issf'] + '" href="' + i18n_header_footer[locale]['home_value'] + '">ISSF 2016</a>');
 	
 	
 	var $header = $('<header id="header" class="header header-fixed">');
