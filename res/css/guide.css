@@ -60,6 +60,22 @@
 	padding: 20px 10px;
 }
 
+/* map view begin */
+.map-view
+{
+	padding: 0 100px;
+  	margin-bottom: 30px;
+	line-height: 25px;
+  	font-size: 16px;
+}
+
+.map-view > .tips > .focus
+{
+	font-weight: 600;
+}
+
+/* map view end */
+
 /* agenda view begin */
 .agenda-view
 {
@@ -132,9 +148,11 @@
 }
 /* agenda view end */
 
-.general-information-view
+/* hotel view begin */
+.hotel-view
 {
 	padding: 0 200px;
   	margin-bottom: 30px;
   	font-size: 16px;
 }
+/* hotel view end */

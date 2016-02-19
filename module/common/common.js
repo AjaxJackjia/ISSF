@@ -28,7 +28,7 @@ var i18n_header_footer = {
 		'tel': 'Tel',
 		'fax': 'Fax',
 		'email': 'Email',
-		'address_title': 'Address',
+		'address_title': 'Conference Address',
 		'address': 'City University of Hong Kong SRI',
 		'lang-title': '转换语言为中文'
 	},
@@ -58,7 +58,7 @@ var i18n_header_footer = {
 		'tel': '电话',
 		'fax': '传真',
 		'email': '邮箱',
-		'address_title': '地址',
+		'address_title': '会议地址',
 		'address': '香港城市大学深圳研究院',
 		'lang-title': 'Change language to English'
 	}
@@ -167,7 +167,7 @@ var generateFooter = function() {
 			   '</ul>';
 	
 	var copyright =    '<div class="copyright">' + 
-					   '	Copyright © ' + (new Date()).getFullYear() + ' <span>CityU</span> All rights reserved.' + 
+							i18n_header_footer[locale]['email'] + ' <a href="mailto:2016issf@gmail.com">2016issf@gmail.com</a> / ' + i18n_header_footer[locale]['address_title'] + ' <a href="' + i18n_header_footer[locale]['guide_value'] + '" style="text-decoration:none;">' + i18n_header_footer[locale]['address'] + '</a> / Copyright © ' + (new Date()).getFullYear() + ' <span>CityU</span> All rights reserved.' + 
 					   '</div>';
 	
 	var genLanguageItem = function() {
@@ -196,8 +196,7 @@ var generateFooter = function() {
 
 	var $footer = $('<footer id="footer" class="footer">');
 	var $footerWrapper = $('<div class="wrapper">');
-	$footerWrapper.append(nav);
-
+	//$footerWrapper.append(nav);
 	$footerWrapper.append($copyright);
 	$footer.append($footerWrapper);
 	
