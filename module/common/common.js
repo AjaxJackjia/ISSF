@@ -167,7 +167,7 @@ var generateFooter = function() {
 			   '</ul>';
 	
 	var copyright =    '<div class="copyright">' + 
-							i18n_header_footer[locale]['email'] + ' <a href="mailto:2016issf@gmail.com">2016issf@gmail.com</a> / ' + i18n_header_footer[locale]['address_title'] + ' <a href="' + i18n_header_footer[locale]['guide_value'] + '" style="text-decoration:none;">' + i18n_header_footer[locale]['address'] + '</a> / Copyright © ' + (new Date()).getFullYear() + ' <span>CityU</span> All rights reserved.' + 
+							i18n_header_footer[locale]['email'] + ' <a href="mailto:2016issf@gmail.com">2016issf@gmail.com</a> / <a href="' + i18n_header_footer[locale]['guide_value'] + '#map" target="_blank" style="text-decoration:none;">' + i18n_header_footer[locale]['address_title'] + '</a> / Copyright © ' + (new Date()).getFullYear() + ' <span>CityU</span> All rights reserved.' + 
 					   '</div>';
 	
 	var genLanguageItem = function() {
@@ -225,7 +225,7 @@ var initHeaderAndFooter = function() {
 	    "unpinned": "slideUp"
 	  }
 	});
-	headroom.init();
+	//headroom.init(); //为了保持兼容性，暂时不适用headroom
 
 	//switch lang
 	/*

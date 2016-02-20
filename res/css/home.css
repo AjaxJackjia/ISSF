@@ -19,6 +19,7 @@
 
 .home-view > .carousel
 {
+	margin: 0 auto;
 	margin-top: 70px;
 }
 

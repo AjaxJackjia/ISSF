@@ -49,14 +49,15 @@ International Summit on Smart Finance
 
 ## 2016-02-20
 
-1. 修改guide界面；
+1. 修改guide界面，调整标签页顺序；
 
 2. 修改footer；
 
 3. 修改中英文转换图标（继续放大）；
 
-todo：
+4. Carousel图片替换以及大小适配；
 
-1. Carousel图片替换以及大小适配；
+5. 制作Sponsors界面；
 
-2. Sponsor界面；
+6. 主页修改，只留Carousel。
+

@@ -33,32 +33,20 @@
 						<li data-target="#portal_carousel" data-slide-to="1"></li>
 						<li data-target="#portal_carousel" data-slide-to="2"></li>
 						<li data-target="#portal_carousel" data-slide-to="3"></li>
-						<li data-target="#portal_carousel" data-slide-to="4"></li>
-						<li data-target="#portal_carousel" data-slide-to="5"></li>
-						<li data-target="#portal_carousel" data-slide-to="6"></li>
 					</ol>
 					<!-- 轮播（Carousel）项目 --> 
 					<div class="carousel-inner">
 						<div class="item active">
-							<img src="res/images/1_opt.jpg" alt="The 1st slid">
+							<img src="res/images/new_1_opt-min.jpg" alt="The 1st slid">
 						</div>
 						<div class="item">
-							<img src="res/images/2_opt.jpg" alt="The 2nd slid">
+							<img src="res/images/new_2_opt-min.jpg" alt="The 2nd slid">
 						</div>
 						<div class="item">
-							<img src="res/images/3_opt.jpg" alt="The 3rd slid">
+							<img src="res/images/new_3_opt-min.jpg" alt="The 3rd slid">
 						</div>
 						<div class="item">
-							<img src="res/images/4_opt.jpg" alt="The 4th slid">
-						</div>
-						<div class="item">
-							<img src="res/images/5_opt.jpg" alt="The 5th slid">
-						</div>
-						<div class="item">
-							<img src="res/images/6_opt.jpg" alt="The 6th slid">
-						</div>
-						<div class="item">
-							<img src="res/images/7_opt.jpg" alt="The 7th slid">
+							<img src="res/images/new_4_opt-min.jpg" alt="The 4th slid">
 						</div>
 					</div> 
 					<!-- 轮播（Carousel）导航 --> 
@@ -71,66 +59,15 @@
 						<span class="sr-only">Next</span>
 					</a> 
 				</div>
-				
-				<div class="abstract">
-			   		<div class="container padded text-center">
-				   		<h1 id="basic_info1">国际智慧金融峰会</h1>
-				   		<h3 id="basic_info2">香港城市大学国际互联网金融中心</h3>
-				   		<h3 id="basic_info3">香港城市大学深圳研究院, 中国深圳</h3>
-				   		<a id="basic_info4" href="about.html" class="btn btn-transparent btn-huge" id="try-now-btn">阅读更多 >></a> 
-			   		</div>
-			    </div>
-			    
-				<div class="sponsors">
-					<div class="container padded text-center">
-					<h1 id="sponsors_title">赞助机构</h1>
-					<div class="brands"> 
-						<div class="brand">
-							<a href="http://www.nsfc.gov.cn/" title="NSFC" target="_blank">
-								<img src="res/images/sponsors/NSFC.jpg" alt="NSFC">
-							</a>
-						</div>
-						<div class="brand">
-							<a href="http://www.cb.cityu.edu.hk/" title="CityU CB" target="_blank">
-								<img src="res/images/sponsors/CB.jpg" alt="CityU CB">
-							</a>
-						</div>
-						<div class="brand">
-							<a href="http://www.springer.com/economics/macroeconomics/journal/40854" title="FI Journal" target="_blank">
-								<img src="res/images/sponsors/FI.jpg" alt="FI Journal">
-							</a>
-						</div>
-						<div class="brand">
-							<a href="http://epic.is.cityu.edu.hk" title="EPIC LAB" target="_blank">
-								<img class="epic" src="res/images/sponsors/epic.jpg" alt="EPIC LAB">
-							</a>
-							<a href="http://sri.cityu.edu.hk/sri/index.asp" title="CityU SRI" target="_blank">
-								<img class="sri" src="res/images/sponsors/SRI.jpg" alt="CityU SRI">
-							</a>
-						</div>
-						<div class="brand">
-							<a href="http://epic.is.cityu.edu.hk/CenterGIF/" title="CGIF" target="_blank">
-								<img class="cgif" src="res/images/sponsors/CGIF.jpg" alt="CGIF">
-							</a>
-						</div>
-					</div>
-				</div>
 			</div>
 		</div>
 		
 		<!-- module js -->
 		<script src="module/common/common.js"></script>
 		<script>
-			//adjust link according to language
-			if(locale == 'en-us') {
-				$('#basic_info4').attr('href', 'about.html');
-			}else{
-				$('#basic_info4').attr('href', 'about_zh-cn.html');
-			}
-			
 			//调整carousel自适应高度
 			var resizeCarousel = function() {
-				var carouselHeight = $( window ).height() - 70;
+				var carouselHeight = $( window ).height() - 70 - 60;
 				$('.home-view').find('.carousel-inner').css('height', carouselHeight + 'px');
 			}
 			resizeCarousel();

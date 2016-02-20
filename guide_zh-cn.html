@@ -29,17 +29,24 @@
 				<h1>指引</h1>
 				<ul class="guide-menu nav nav-tabs" role="tablist">
 				  <li role="presentation" class="active">
-						<a id="map_title" href="#map" aria-controls="map" role="tab" data-toggle="tab">地图</a> 
+						<a id="agenda_title" href="#agenda" aria-controls="agenda" role="tab" data-toggle="tab">日程安排</a> 
 				  </li>
 				  <li role="presentation">
-						<a id="agenda_title" href="#agenda" aria-controls="agenda" role="tab" data-toggle="tab">日程安排</a> 
+						<a id="map_title" href="#map" aria-controls="map" role="tab" data-toggle="tab">地图</a> 
 				  </li>
 				  <li role="presentation">
 				  		<a id="hotel_title" href="#hotel" aria-controls="ps" role="tab" data-toggle="tab">推荐酒店</a> 
 				  </li>
 				</ul>
 				<div class="guide-content tab-content">
-				  <div role="tabpanel" class="tab-pane fade in active" id="map">
+				  <div role="tabpanel" class="tab-pane fade in active" id="agenda">
+				  	<div class="agenda-view">
+				  		<div class="arrangements">
+							<h1 style="text-align: center;height: 300px;">Coming soon...</h1>
+						</div>
+				  	</div>
+				  </div>
+				  <div role="tabpanel" class="tab-pane fade" id="map">
 				  	<div class="map-view">
 						<div class="address">
 							<h3>地址:</h3> 香港城市大学产学研大楼, 深圳市南山区高新区南区粤兴一道8号.
@@ -83,13 +90,6 @@
 						</div>
 				  	</div>
 				  </div>
-				  <div role="tabpanel" class="tab-pane fade" id="agenda">
-				  	<div class="agenda-view">
-				  		<div class="arrangements">
-							<h1 style="text-align: center;height: 300px;">Coming soon...</h1>
-						</div>
-				  	</div>
-				  </div>
 				  <div role="tabpanel" class="tab-pane fade" id="hotel">
 				  	<div class="hotel-view">
 						<h1 style="text-align: center;height: 300px;">Coming soon...</h1>
@@ -101,5 +101,26 @@
 		
 		<!-- module js -->
 		<script src="module/common/common.js"></script>
+		<script>
+			var hash = location.hash || location.search;
+	    	var questionMark = hash.indexOf('#');
+	    	if(questionMark !== -1) {
+	    		var subpage = hash.substring(questionMark + 1);
+	    		$('.guide-menu > li').removeClass('active');
+	    		$('.guide-content > .tab-pane').removeClass('in active');
+
+	    		if(subpage == 'map') {
+	    			$($('.guide-menu > li')[1]).addClass('active');
+	    			$('#map').addClass('in active');
+	    		}else if(subpage == 'hotel') {
+					$($('.guide-menu > li')[2]).addClass('active');
+	    			$('#hotel').addClass('in active');
+	    		}else{
+	    			$($('.guide-menu > li')[0]).addClass('active');
+	    			$('#agenda').addClass('in active');
+	    		}
+	    	}
+	    	
+		</script>
 	</body>
 </html>
