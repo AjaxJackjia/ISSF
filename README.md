@@ -61,3 +61,9 @@ International Summit on Smart Finance
 
 6. 主页修改，只留Carousel。
 
+## 2016-02-24
+
+1. 修改important dates；（统一集中到submission.html页面下的Paper Submission标签下）
+
+2. 修改语法；
+
