@@ -67,3 +67,6 @@ International Summit on Smart Finance
 
 2. 修改语法；
 
+## 2016-03-01
+
+增加local co-chairs
