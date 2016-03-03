@@ -77,3 +77,5 @@ International Summit on Smart Finance
 
 2. 增加酒店信息；
 
+3. 增加competition co-chair
+
