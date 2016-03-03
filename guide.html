@@ -28,10 +28,7 @@
 			<div class="guide-view">
 				<h1>Guide</h1>
 				<ul class="guide-menu nav nav-tabs" role="tablist">
-				  <li role="presentation" class="active">
-						<a id="agenda_title" href="#agenda" aria-controls="agenda" role="tab" data-toggle="tab">Agenda</a> 
-				  </li>
-				  <li role="presentation">
+				  <li role="presentation"  class="active">
 						<a id="map_title" href="#map" aria-controls="map" role="tab" data-toggle="tab">Map</a> 
 				  </li>
 				  <li role="presentation">
@@ -39,14 +36,7 @@
 				  </li>
 				</ul>
 				<div class="guide-content tab-content">
-				  <div role="tabpanel" class="tab-pane fade in active" id="agenda">
-				  	<div class="agenda-view">
-				  		<div class="arrangements">
-							<h1 style="text-align: center;height: 300px;">Coming soon...</h1>
-						</div>
-				  	</div>
-				  </div>
-				  <div role="tabpanel" class="tab-pane fade" id="map">
+				  <div role="tabpanel" class="tab-pane fade in active" id="map">
 				  	<div class="map-view">
 						<div class="address">
 							<h3>Address:</h3> City University Shenzhen Research Institute, No.8, Yuexing 1st road, Nanshan district, Shenzhen.
@@ -92,7 +82,37 @@
 				  </div>
 				  <div role="tabpanel" class="tab-pane fade" id="hotel">
 				  	<div class="hotel-view">
-						<h1 style="text-align: center;height: 300px;">Coming soon...</h1>
+						<!-- hotel 1 -->
+						<h3>凯宾斯基酒店(Kempinski Hotel) </h3>
+						<div class="focus">Address:</div> Intersection of 3rd Haide Way (Haide San Dao) & Houhaibin Road (Houhaibin Lu), Nanshan District <br/>
+						2.5 km from the City University of Hong Kong Shenzhen Research Institute
+						<div class="focus">Price:</div> 868 RMB (Including breakfast. Subject to 15% service charge)
+
+						<img src="res/images/hotel/KempinskiHotel.png" alt="Kempinski Hotel" />
+						
+						<!-- hotel 2 -->
+						<h3>博林诺富特酒店(Novotel Bauhinia Shenzhen) </h3>
+						<div class="focus">Address:</div> 2002 East Qiaocheng Road (Qiaocheng Dong Lu), Huaqiao Town, Futian District <br/>
+						6.5 km from the City University of Hong Kong, Shenzhen Research Institute.
+						<div class="focus">Price:</div> 689 RMB (Including service charge and breakfast)
+
+						<img src="res/images/hotel/NovotelBauhiniaShenzhen.png" alt="Novotel Bauhinia Shenzhen" />
+						
+						<!-- hotel 3 -->
+						<h3>新桃园酒店(Grand View Hotel) </h3>
+						<div class="focus">Address:</div> East Villa, Haiancheng Mansion, 5th Wenxin Road (Wenxin Wu Lu), Nanshan District <br/>
+						2.5 km from the City University of Hong Kong, Shenzhen Research Institute
+						<div class="focus">Price:</div> 530 RMB (Including service charge and breakfast)
+
+						<img src="res/images/hotel/GrandViewHotel.png" alt="Grand View Hotel" />
+						
+						<!-- hotel 4 -->
+						<h3>枫叶酒店(Maple Leaf City Hotel) </h3>
+						<div class="focus">Address:</div> 1039 Nanshan Avenue (Nanshan Dadao), Nanshan District, near Haiancheng Mansion <br/>
+						2.5 km from the City University of Hong Kong, Shenzhen Research Institute
+						<div class="focus">Price:</div> 250 RMB (Including service charge and breakfast)
+
+						<img src="res/images/hotel/MapleLeafCityHotel.png" alt="Maple Leaf City Hotel" />
 				  	</div>
 				  </div>
 				</div>
@@ -109,15 +129,12 @@
 	    		$('.guide-menu > li').removeClass('active');
 	    		$('.guide-content > .tab-pane').removeClass('in active');
 
-	    		if(subpage == 'map') {
-	    			$($('.guide-menu > li')[1]).addClass('active');
-	    			$('#map').addClass('in active');
-	    		}else if(subpage == 'hotel') {
-					$($('.guide-menu > li')[2]).addClass('active');
+	    		if(subpage == 'hotel') {
+					$($('.guide-menu > li')[1]).addClass('active');
 	    			$('#hotel').addClass('in active');
 	    		}else{
 	    			$($('.guide-menu > li')[0]).addClass('active');
-	    			$('#agenda').addClass('in active');
+	    			$('#map').addClass('in active');
 	    		}
 	    	}
 	    	

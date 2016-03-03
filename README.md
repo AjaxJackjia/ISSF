@@ -70,3 +70,10 @@ International Summit on Smart Finance
 ## 2016-03-01
 
 增加local co-chairs
+
+## 2016-03-03
+
+1. 去掉guide.html中的agenda模块；
+
+2. 增加酒店信息；
+

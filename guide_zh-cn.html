@@ -29,9 +29,6 @@
 				<h1>指引</h1>
 				<ul class="guide-menu nav nav-tabs" role="tablist">
 				  <li role="presentation" class="active">
-						<a id="agenda_title" href="#agenda" aria-controls="agenda" role="tab" data-toggle="tab">日程安排</a> 
-				  </li>
-				  <li role="presentation">
 						<a id="map_title" href="#map" aria-controls="map" role="tab" data-toggle="tab">地图</a> 
 				  </li>
 				  <li role="presentation">
@@ -39,14 +36,7 @@
 				  </li>
 				</ul>
 				<div class="guide-content tab-content">
-				  <div role="tabpanel" class="tab-pane fade in active" id="agenda">
-				  	<div class="agenda-view">
-				  		<div class="arrangements">
-							<h1 style="text-align: center;height: 300px;">Coming soon...</h1>
-						</div>
-				  	</div>
-				  </div>
-				  <div role="tabpanel" class="tab-pane fade" id="map">
+				  <div role="tabpanel" class="tab-pane fade in active" id="map">
 				  	<div class="map-view">
 						<div class="address">
 							<h3>地址:</h3> 香港城市大学产学研大楼, 深圳市南山区高新区南区粤兴一道8号.
@@ -92,7 +82,37 @@
 				  </div>
 				  <div role="tabpanel" class="tab-pane fade" id="hotel">
 				  	<div class="hotel-view">
-						<h1 style="text-align: center;height: 300px;">Coming soon...</h1>
+						<!-- hotel 1 -->
+						<h3>凯宾斯基酒店 </h3>
+						<div class="focus">地址:</div> 南山区后海滨路海德三道 <br/>
+						距离香港城市大学深圳研究院2.5公里
+						<div class="focus">价格:</div> 人民币868/元（含早）另需加收15%服务费
+
+						<img src="res/images/hotel/KempinskiHotel_zh-cn.png" alt="凯宾斯基酒店" />
+						
+						<!-- hotel 2 -->
+						<h3>博林诺富特酒店 </h3>
+						<div class="focus">地址:</div> 福田区侨城东路2002号 <br/>
+						距离香港城市大学深圳研究院7.6公里
+						<div class="focus">价格:</div> 人民币689/元（含服务费含早餐）
+
+						<img src="res/images/hotel/NovotelBauhiniaShenzhen_zh-cn.png" alt="博林诺富特酒店" />
+						
+						<!-- hotel 3 -->
+						<h3>新桃园酒店</h3>
+						<div class="focus">地址:</div> 南山区文心五路33号海岸城大厦东座 <br/>
+						距离香港城市大学深圳研究院2.5公里
+						<div class="focus">价格:</div> 人民币530/元（含服务费含早）
+
+						<img src="res/images/hotel/GrandViewHotel_zh-cn.png" alt="新桃园酒店" />
+						
+						<!-- hotel 4 -->
+						<h3>枫叶酒店 </h3>
+						<div class="focus">地址:</div> 南山区学府路6号（学林雅苑对面），近南山海岸城 <br/>
+						距离香港城市大学深圳研究院2.5公里
+						<div class="focus">价格:</div> 人民币250/元（含服务费含早）
+
+						<img src="res/images/hotel/MapleLeafCityHotel_zh-cn.png" alt="枫叶酒店" />
 				  	</div>
 				  </div>
 				</div>
@@ -109,15 +129,12 @@
 	    		$('.guide-menu > li').removeClass('active');
 	    		$('.guide-content > .tab-pane').removeClass('in active');
 
-	    		if(subpage == 'map') {
-	    			$($('.guide-menu > li')[1]).addClass('active');
-	    			$('#map').addClass('in active');
-	    		}else if(subpage == 'hotel') {
-					$($('.guide-menu > li')[2]).addClass('active');
+	    		if(subpage == 'hotel') {
+					$($('.guide-menu > li')[1]).addClass('active');
 	    			$('#hotel').addClass('in active');
 	    		}else{
 	    			$($('.guide-menu > li')[0]).addClass('active');
-	    			$('#agenda').addClass('in active');
+	    			$('#map').addClass('in active');
 	    		}
 	    	}
 	    	

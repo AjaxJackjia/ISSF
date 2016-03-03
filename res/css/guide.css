@@ -151,8 +151,22 @@
 /* hotel view begin */
 .hotel-view
 {
-	padding: 0 200px;
+	padding: 0 100px;
   	margin-bottom: 30px;
+	line-height: 25px;
   	font-size: 16px;
 }
+
+.hotel-view .focus
+{
+	font-weight: 600;
+}
+
+.hotel-view img
+{
+	margin-top: 20px;
+	margin-bottom: 50px;
+	max-width: 700px;
+}
+
 /* hotel view end */
