@@ -17,3 +17,59 @@
 	padding: 0 100px;
 	margin-bottom: 100px;
 }
+
+.registration-view > .registration-content
+{
+	margin: 0 130px;
+	padding: 0 100px;
+    margin-bottom: 30px;
+    line-height: 25px;
+    font-size: 16px;
+}
+
+.registration-view > .registration-content > .registration-form
+{
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+
+.registration-view > .registration-content > .registration-form > a
+{
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.registration-view > .registration-content > .registration-email
+{
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+
+.registration-view > .registration-content > .registration-email > h4
+{
+	line-height: 40px;
+}
+
+.registration-view > .registration-content > .registration-email > h4 > .focus
+{
+	font-weight: 600;
+}
+
+.registration-view > .registration-content > .offical-wechat-platform
+{
+	margin-top: 30px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+.registration-view > .registration-content > .offical-wechat-platform > .feedback
+{
+	margin-bottom: 50px;
+	text-align: left;
+}
+
+.registration-view > .registration-content > .offical-wechat-platform > img
+{
+	width: 150px;
+	height: 150px;
+}
