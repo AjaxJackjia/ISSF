@@ -45,7 +45,7 @@ body > .container
 /* header format begin */
 .header
 {
-	height: 70px;
+	height: 90px;
 	background: #eee;
 	
 	/* set transparent attribute*/
@@ -78,7 +78,7 @@ body > .container
 	margin-left: 40px;
 	padding: 0;
 	width: 280px;
-	height: 70px;
+	height: 90px;
 }
 
 .header > .wrapper > .brand > a
@@ -88,7 +88,7 @@ body > .container
 	margin-left: 22px;
 	padding: 0;
 	height: 100%;
-	line-height: 70px;
+	line-height: 90px;
 	font-size: 35px;
 	text-decoration: none;
 }
@@ -183,32 +183,44 @@ body > .container
 {
 	float: right;
 	margin-right: 60px;
-	list-style: none;
+	width: 750px;
 }
 
-.header > .wrapper > .nav > li
+.header > .wrapper > .nav > .firstline,
+.header > .wrapper > .nav > .secondline
+{
+	float: right;
+	width: 750px;
+}
+
+.header > .wrapper > .nav .menu-item
 {
 	display: inline-block;
-	width: 130px;
-	height: 70px;
+	width: 150px;
+	height: 45px;
 	margin: 0;
 	
 	text-align: center;
 	line-height: 50px;
 }
 
-.header > .wrapper > .nav > li.active
+.header > .wrapper > .nav .menu-item.active
 {
 	border-bottom: 3px solid #23a8f5;
 }
 
-.header > .wrapper > .nav > li a:hover
+.header > .wrapper > .nav .menu-item a
 {
-	height: 70px;
+	display: block;
+}
+
+.header > .wrapper > .nav .menu-item a:hover
+{
+	height: 45px;
 	border-bottom: 3px solid #23a8f5;
 }
 
-.header > .wrapper > .nav > li a
+.header > .wrapper > .nav .menu-item a
 {
 	text-decoration: none;
 	font-weight: 800;

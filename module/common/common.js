@@ -11,6 +11,10 @@ var i18n_header_footer = {
 		'submission': 'Submission',
 		'guide': 'Guide',
 		'registration': 'Registration',
+		'speakers': 'Speakers',
+		'specialissues': 'Special Issues',
+		'program': 'Program',
+		'researchcamps': 'Research Camps',
 		
 		'home_value': 'index.html',
 		'about_value': 'about.html',
@@ -18,6 +22,10 @@ var i18n_header_footer = {
 		'submission_value': 'submission.html',
 		'guide_value': 'guide.html',
 		'registration_value': 'registration.html',
+		'speakers_value': 'speakers.html',
+		'specialissues_value': 'specialissues.html',
+		'program_value': 'program.html',
+		'researchcamps_value': 'researchcamps.html',
 
 		'host': 'hosts',
 		'contact': 'Secretariat of ISSF 2016',
@@ -41,6 +49,10 @@ var i18n_header_footer = {
 		'submission': '论文事宜',
 		'guide': '指引',
 		'registration': '注册',
+		'speakers': '主讲嘉宾',
+		'specialissues': '发表机会',
+		'program': '日程',
+		'researchcamps': '竞赛研讨',
 		
 		'home_value': 'index_zh-cn.html',
 		'about_value': 'about_zh-cn.html',
@@ -48,6 +60,10 @@ var i18n_header_footer = {
 		'submission_value': 'submission_zh-cn.html',
 		'guide_value': 'guide_zh-cn.html',
 		'registration_value': 'registration_zh-cn.html',
+		'speakers_value': 'speakers_zh-cn.html',
+		'specialissues_value': 'specialissues_zh-cn.html',
+		'program_value': 'program_zh-cn.html',
+		'researchcamps_value': 'researchcamps_zh-cn.html',
 
 		'host': '主办方',
 		'contact': 'ISSF 2016 秘书组',
@@ -66,21 +82,33 @@ var i18n_header_footer = {
 
 var generateHeader = function() {
 	var nav_key = [
+		//the first line
 		i18n_header_footer[locale]['home'],
 		i18n_header_footer[locale]['about'],
+		i18n_header_footer[locale]['speakers'],
+		i18n_header_footer[locale]['specialissues'],
 		i18n_header_footer[locale]['committees'],
-		i18n_header_footer[locale]['submission'],
+		//the second line
+		i18n_header_footer[locale]['program'],
 		i18n_header_footer[locale]['guide'],
-		i18n_header_footer[locale]['registration'],
+		i18n_header_footer[locale]['submission'],
+		i18n_header_footer[locale]['researchcamps'],
+		i18n_header_footer[locale]['registration']
 	];
 
 	var nav_value = [
+		//the first line
 		i18n_header_footer[locale]['home_value'],
 		i18n_header_footer[locale]['about_value'],
+		i18n_header_footer[locale]['speakers_value'],
+		i18n_header_footer[locale]['specialissues_value'],
 		i18n_header_footer[locale]['committees_value'],
-		i18n_header_footer[locale]['submission_value'],
+		//the second line
+		i18n_header_footer[locale]['program_value'],
 		i18n_header_footer[locale]['guide_value'],
-		i18n_header_footer[locale]['registration_value'],
+		i18n_header_footer[locale]['submission_value'],
+		i18n_header_footer[locale]['researchcamps_value'],
+		i18n_header_footer[locale]['registration_value']
 	];
 
 	var menuIndex = function() {
@@ -89,20 +117,31 @@ var generateHeader = function() {
 		if(menu == '') {
 			return 0;
 		}
-		for(var index = 0;index<6;index++) {
+		for(var index = 0;index<10;index++) {
 			if(menu == nav_value[index]) {
 				return index;
 			}
 		}
 	};
 	
-	var $nav = $('<ul class="nav nav-main">');
+	var $nav = $('<div class="nav nav-main">');
+	var $firstLine = $('<div class="firstline">');
+	var $secondLine = $('<div class="secondline">');
 	$.each(nav_key, function(index, value) {
-		if(menuIndex() == index) 
-			$nav.append('<li class="active"><a href="'+ nav_value[index] +'">' + nav_key[index] + '</a></li>');
-		else
-			$nav.append('<li><a href="'+ nav_value[index] +'">' + nav_key[index] + '</a></li>');
+		if(index <= 4) {
+			if(menuIndex() == index) 
+				$firstLine.append('<div class="menu-item active"><a href="'+ nav_value[index] +'">' + nav_key[index] + '</a></div>');
+			else
+				$firstLine.append('<div class="menu-item"><a href="'+ nav_value[index] +'">' + nav_key[index] + '</a></div>');
+		}else{
+			if(menuIndex() == index) 
+				$secondLine.append('<div class="menu-item active"><a href="'+ nav_value[index] +'">' + nav_key[index] + '</a></div>');
+			else
+				$secondLine.append('<div class="menu-item"><a href="'+ nav_value[index] +'">' + nav_key[index] + '</a></div>');
+		}
 	});
+	$nav.append($firstLine);
+	$nav.append($secondLine);
 	
 	var genLanguageItem = function() {
 		var $tpl = $('<div class="switch-lang dropdown">');

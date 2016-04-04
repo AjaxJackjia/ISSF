@@ -1,0 +1,59 @@
+.special-issues-view
+{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.special-issues-view > h1,
+.special-issues-view > h3
+{
+	margin: 0 auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.special-issues-view > h3
+{
+	padding: 0 260px;
+	margin-bottom: 50px;
+}
+
+.special-issues-view > .issue
+{
+	margin: 0 130px;
+	padding: 0 150px;
+    margin-bottom: 50px;
+    line-height: 25px;
+    font-size: 16px;
+}
+
+.special-issues-view > .issue > .issue-title
+{
+	margin-bottom: 10px;
+}
+
+.special-issues-view > .issue > .issue-content >p
+{
+	padding: 4px 0px;
+	font-size: 16px;
+}
+
+.special-issues-view > .issue > .issue-picture
+{
+	
+}
+
+.special-issues-view > .issue > .issue-picture > img
+{
+	width: 200px;
+}
+
+.special-issues-view > .issues-continue
+{
+	margin: 0 130px;
+	padding: 0 150px;
+    margin-bottom: 120px;
+    line-height: 25px;
+    font-size: 16px;
+}

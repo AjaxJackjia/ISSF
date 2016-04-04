@@ -1,0 +1,90 @@
+.speakers-view
+{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.speakers-view > h1
+{
+	margin: 0 auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.speakers-view > .speakers-content
+{
+	margin: 0 130px;
+	padding: 0 150px;
+    margin-bottom: 30px;
+    line-height: 25px;
+    font-size: 16px;
+}
+
+.speakers-view > .speakers-content > .speaker
+{
+	padding: 4px 0px;
+	font-size: 16px;
+}
+
+.speakers-view > .speakers-content > .speaker > a
+{
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.speakers-view > .speakers-continue
+{
+	margin: 0 130px;
+	padding: 0 150px;
+    margin-bottom: 120px;
+    line-height: 25px;
+    font-size: 16px;
+}
+
+/* speaker introduction */
+.speakers-view > .speaker-intro
+{
+	margin: 0 130px;
+	padding: 0 100px;
+    margin-bottom: 30px;
+    line-height: 25px;
+    font-size: 16px;
+}
+
+.speakers-view > .speaker-intro > .speaker-photo
+{
+	text-align: center;
+}
+
+.speakers-view > .speaker-intro > .speaker-title
+{
+	margin: 0 auto;
+	margin-top: 30px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+.speakers-view > .speaker-intro > .intro-en,
+.speakers-view > .speaker-intro > .intro-zh
+{
+	margin-bottom: 60px;
+}
+
+.speakers-view > .speaker-intro > .intro-en > p,
+.speakers-view > .speaker-intro > .intro-zh > p
+{
+	padding: 4px 0px;
+	font-size: 16px;
+}
+
+.speakers-view > .speaker-intro > .close-panel
+{
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+.speakers-view > .speaker-intro > .close-panel > button
+{
+	width: 200px;
+}

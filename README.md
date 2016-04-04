@@ -79,3 +79,14 @@ International Summit on Smart Finance
 
 3. 增加competition co-chair
 
+## 2016-04-04
+
+1. 修改菜单，改为两栏；
+
+2. 新增主讲嘉宾页面以及各个主讲人子页面；
+
+3. 新增special issues页面；
+
+4. 新增program页面；
+
+5. 新增research camps页面。

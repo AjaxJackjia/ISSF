@@ -1,0 +1,23 @@
+.research-camps-view
+{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.research-camps-view > h1
+{
+	margin: 0 auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.research-camps-view > .research-camps-content
+{
+	margin: 0 130px;
+	padding: 0 150px;
+    margin-bottom: 280px;
+    line-height: 25px;
+    font-size: 16px;
+    text-align: center;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="International Summit on Smart Finance 2016 | ISSF 2016">
+		<meta name="keywords" content="ISSF 2016|International Summit on Smart Finance|CityU ISSF">
+		<title>International Summit on Smart Finance (ISSF)| Dr. Chris Westland</title>
+		
+		<!-- common style -->
+		<link rel="icon" href="../res/images/favicon.ico" type="image/x-icon">
+		<link rel="shortcut icon" href="../res/images/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="../lib/bootstrap/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../lib/font-awesome/css/font-awesome.min.css">
+		
+		<!-- module style -->
+		<link rel="stylesheet" href="../res/css/common.css">
+		<link rel="stylesheet" href="../res/css/speakers.css">
+		
+		<!-- common lib -->
+		<script src="../lib/jquery/dist/jquery.min.js"></script>
+		<script src="../lib/bootstrap/dist/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="speakers-view">
+				<h1 class="speakers-title">Invited Speaker</h1>
+				<div class="speaker-intro">
+					<div class="speaker-photo">
+						<img style="width: 400px" src="../res/images/speakers/chris_westland.jpg" alt="Dr. Chris Westland">
+					</div>
+
+					<div class="speaker-title">
+						<h3>Dr. Chris Westland</h3>
+					</div>
+
+					<div class="intro-en">
+						<p>I am currently Professor in the Department of Information & Decision Sciences at the University of Illinois – Chicago. I have a BA in Statistics and an MBA in Accounting from Indiana University and received my PhD in Computers and Information Systems from the University of Michigan. I have professional experience in the US as a certified public accountant and as a consultant in technology law in the US, Europe, Latin America and Asia.  I am the author of numerous academic papers and of seven books:  Global Electronic Commerce (MIT Press 2000); Global Innovation Management (Palgrave Macmillan 2nd ed 2015; 2008); Red Wired: China’s Internet Revolution (Marshall Cavendish, 2010); Structural Equation Modeling (Springer 2015);Financial Dynamics (Wiley 2003); Valuing Technology (Wiley 2002) and Financial Auditing with Information Technology (Credere, 2014).   I am the Editor-in-Chief of Electronic Commerce Research (Springer) and have served on editorial boards of several other information technology journals including Management Science, ISR, ECRA, IJEC, and others. I have served on the faculties at the University of Michigan, University of Southern California, Hong Kong University of Science and Technology, Tsinghua University, University of Science and Technology of China, Harbin Institute of Technology and other academic institutions. In 2012 I received High-Level Foreign Expert status in China under the 1000-Talents Plan and am currently Overseas Chair Professor at Beihang University. I have advised on patent, valuation and technology strategy for numerous technology firms.</p>
+					</div>
+
+					<div class="close-panel">
+						<button type="button" class="btn btn-default" onclick="window.close();"></button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- module js -->
+		<script>
+			var i18n_close = {
+				'en-us': 'close this page',
+				'zh-cn': '关闭页面'
+			};
+			var $closeBtn = $('.close-panel > button');
+
+			var language = 'en-us';
+			if(sessionStorage && sessionStorage.getItem('lang')) {
+				language = sessionStorage.getItem('lang');
+			}
+
+			$closeBtn.html('<span aria-hidden="true" style="margin-right: 15px;">&times;</span>' + i18n_close[language]);
+		</script>
+	</body>
+</html>
