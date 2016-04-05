@@ -90,3 +90,9 @@ International Summit on Smart Finance
 4. 新增program页面；
 
 5. 新增research camps页面。
+
+## 2016-04-05
+
+1. 填充research camps页面；
+
+2. 修改相关页面细节。
