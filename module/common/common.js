@@ -325,3 +325,4 @@ var initHeaderAndFooter = function() {
 
 //初始化页面顶部和底部
 initHeaderAndFooter();
+

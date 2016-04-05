@@ -32,11 +32,11 @@
 					</div>
 
 					<div class="speaker-title">
-						<h3>Dr. Guangping Lin林光平</h3>
+						<h3>Dr. Guangping Lin (林光平)</h3>
 					</div>
 
 					<div class="intro-en">
-						<p>Portland State University的林光平教授，资深计量经济学学者，目前主要研究的一个课题是基于大数据的计量金融经济学。</p>
+						<p>Portland State University的林光平教授为资深计量经济学学者，目前主要研究的一个课题是基于大数据的计量金融经济学。</p>
 						<p>Professor of Economics</p>
 						<p>Fulbright-Hays Research Scholar, 1985-1986, ISEAS, Singapore;</p>
 						<p>Post Doctorate Research Fellow in Economics, 1979, Harvard University;</p>
@@ -55,26 +55,13 @@
 					</div>
 
 					<div class="close-panel">
-						<button type="button" class="btn btn-default" onclick="window.close();"></button>
+						<a class="btn btn-default" href="javascirpt:void(0)"></a>
 					</div>
 				</div>
 			</div>
 		</div>
 
 		<!-- module js -->
-		<script>
-			var i18n_close = {
-				'en-us': 'close this page',
-				'zh-cn': '关闭页面'
-			};
-			var $closeBtn = $('.close-panel > button');
-
-			var language = 'en-us';
-			if(sessionStorage && sessionStorage.getItem('lang')) {
-				language = sessionStorage.getItem('lang');
-			}
-
-			$closeBtn.html('<span aria-hidden="true" style="margin-right: 15px;">&times;</span>' + i18n_close[language]);
-		</script>
+		<script src="../module/common/speaker.js"></script>
 	</body>
 </html>

@@ -33,7 +33,7 @@
 
 					<div class="speaker-title">
 						<h3>Yihan Fang (方以涵)</h3>
-						<h3>CEO of Yirendai</h3>
+						<h3>CEO of <i>Yirendai</i></h3>
 					</div>
 
 					<div class="intro-en">
@@ -47,26 +47,13 @@
 					</div>
 
 					<div class="close-panel">
-						<button type="button" class="btn btn-default" onclick="window.close();"></button>
+						<a class="btn btn-default" href="javascirpt:void(0)"></a>
 					</div>
 				</div>
 			</div>
 		</div>
 
 		<!-- module js -->
-		<script>
-			var i18n_close = {
-				'en-us': 'close this page',
-				'zh-cn': '关闭页面'
-			};
-			var $closeBtn = $('.close-panel > button');
-
-			var language = 'en-us';
-			if(sessionStorage && sessionStorage.getItem('lang')) {
-				language = sessionStorage.getItem('lang');
-			}
-
-			$closeBtn.html('<span aria-hidden="true" style="margin-right: 15px;">&times;</span>' + i18n_close[language]);
-		</script>
+		<script src="../module/common/speaker.js"></script>
 	</body>
 </html>
