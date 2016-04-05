@@ -16,8 +16,14 @@
 {
 	margin: 0 130px;
 	padding: 0 150px;
-    margin-bottom: 280px;
+    margin-bottom: 100px;
     line-height: 25px;
     font-size: 16px;
-    text-align: center;
+}
+
+.research-camps-view > .research-camps-content > p,
+.research-camps-view > .research-camps-content > ul
+{
+	padding: 4px 20px;
+	font-size: 16px;
 }
