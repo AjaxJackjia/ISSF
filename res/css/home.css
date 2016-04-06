@@ -1,21 +1,10 @@
-/* home view begin */
-.home-view
+.main-container 
 {
-	margin: 0 auto;
-	margin-top: -70px;
+	margin: 0;
 	padding: 0;
 }
 
-.home-view
+#portal_carousel > .carousel-inner > .item > img
 {
-	height: 400px;
-	background: red;
+	width: 100%;
 }
-
-.home-view > .carousel
-{
-	margin: 0 auto;
-	margin-top: 70px;
-}
-
-/* home view format end */
