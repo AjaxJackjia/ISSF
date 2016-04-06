@@ -12,9 +12,9 @@ var i18n_header_footer = {
 		'guide': 'Guide',
 		'registration': 'Registration',
 		'speakers': 'Speakers',
-		'specialissues': 'Special Issues',
+		'specialissues': 'Special Issue',
 		'program': 'Program',
-		'researchcamps': 'Research Camps',
+		'researchcamps': 'Research Camp',
 		
 		'home_value': 'index.html',
 		'about_value': 'about.html',
@@ -101,13 +101,13 @@ var generateHeader = function() {
 		i18n_header_footer[locale]['home_value'],
 		i18n_header_footer[locale]['about_value'],
 		i18n_header_footer[locale]['speakers_value'],
-		i18n_header_footer[locale]['specialissues_value'],
+		i18n_header_footer[locale]['researchcamps_value'],
 		i18n_header_footer[locale]['committees_value'],
 		//the second line
 		i18n_header_footer[locale]['program_value'],
 		i18n_header_footer[locale]['guide_value'],
 		i18n_header_footer[locale]['submission_value'],
-		i18n_header_footer[locale]['researchcamps_value'],
+		i18n_header_footer[locale]['specialissues_value'],
 		i18n_header_footer[locale]['registration_value']
 	];
 
