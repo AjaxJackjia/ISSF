@@ -46,7 +46,7 @@ var i18n_header_footer = {
 		'home': '首页',
 		'about': '关于',
 		'committees': '组委会',
-		'submission': '论文事宜',
+		'submission': '论文投稿',
 		'guide': '指引',
 		'registration': '注册',
 		'speakers': '主讲嘉宾',
@@ -86,13 +86,13 @@ var generateHeader = function() {
 		i18n_header_footer[locale]['home'],
 		i18n_header_footer[locale]['about'],
 		i18n_header_footer[locale]['speakers'],
-		i18n_header_footer[locale]['specialissues'],
+		i18n_header_footer[locale]['researchcamps'],
 		i18n_header_footer[locale]['committees'],
 		//the second line
 		i18n_header_footer[locale]['program'],
 		i18n_header_footer[locale]['guide'],
 		i18n_header_footer[locale]['submission'],
-		i18n_header_footer[locale]['researchcamps'],
+		i18n_header_footer[locale]['specialissues'],
 		i18n_header_footer[locale]['registration']
 	];
 
