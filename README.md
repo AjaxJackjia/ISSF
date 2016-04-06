@@ -96,3 +96,7 @@ International Summit on Smart Finance
 1. 填充research camps页面；
 
 2. 修改相关页面细节。
+
+## 2016-04-06
+
+1. 新增speaker，Dr. Hailiang Huang。

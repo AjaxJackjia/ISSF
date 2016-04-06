@@ -80,6 +80,14 @@
 	text-justify: inter-ideograph;
 }
 
+.speakers-view > .speaker-intro > .intro-en li,
+.speakers-view > .speaker-intro > .intro-zh li
+{
+	padding: 4px 0px;
+	text-align: justify;
+	text-justify: inter-ideograph;
+}
+
 .speakers-view > .speaker-intro > .close-panel
 {
 	text-align: center;
