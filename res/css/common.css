@@ -74,10 +74,16 @@ body
 	display: inline-block;
 }
 
+.navbar .navbar-header .navbar-brand .switch-lang .lang-img
+{
+	cursor: pointer;
+}
+
 .navbar .navbar-header .navbar-brand .switch-lang .title
 {
 	display: inline-block;
 	font-size: 20px;
+	cursor: pointer;
 }
 
 .navbar .navbar-header .navbar-brand .brand-link > a
@@ -237,4 +243,11 @@ body
 	{
 		display: none;
 	}
+}
+
+/* main content container */
+.main-container 
+{
+	margin: 0;
+	padding: 0;
 }
