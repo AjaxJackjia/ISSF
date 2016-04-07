@@ -42,12 +42,7 @@
 }
 
 /* tab content */
-.about-content
-{
-	margin: 0 100px;
-}
-
-.about-content > .tab-pane
+.tab-content .tab-pane
 {
 	padding: 20px 10px;
 }

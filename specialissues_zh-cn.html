@@ -24,11 +24,90 @@
 		<script src="lib/headroom.js/dist/headroom.min.js"></script>
 	</head>
 	<body>
+		<!-- navigator -->
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="container">
+				<div class="row">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" 
+							 data-target="#navbar-collapse">
+							 <span class="icon-bar"></span>
+							 <span class="icon-bar"></span>
+							 <span class="icon-bar"></span>
+						</button>
+
+						<div class="navbar-brand">
+							<div id="language" class="switch-lang" title="转换语言为中文">
+								<img class="lang-img zh-cn" src="res/images/zh_cn.png">
+								<div class="title">中文</div>
+							</div>
+							<div class="brand-link">
+								<a title="International Summit on Smart Finance 2016" href="index.html">
+									ISSF 2016
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="menu-panel col-md-8 col-sm-12 col-xs-12">
+						<div class="collapse navbar-collapse" id="navbar-collapse">
+					   		<div class="nav nav-main">
+					   			<div class="container-fluid">
+					   				<div class="row">
+					   					<div class="col-md-2 col-sm-12 col-xs-12 menu-item active">
+					   						<a id="menu_home" href="index.html">Home</a>
+					   					</div>
+					   					<div class="col-md-2 col-sm-12 col-xs-12 menu-item">
+					   						<a id="menu_about" href="about.html">About</a>
+					   					</div>
+					   					<div class="col-md-2 col-sm-12 col-xs-12 menu-item">
+					   						<a id="menu_speakers" href="speakers.html">Speakers</a>
+					   					</div>
+					   					<div class="col-md-3 col-sm-12 col-xs-12 menu-item">
+					   						<a id="menu_researchcamps" href="researchcamps.html">Research Camp</a>
+					   					</div>
+					   					<div class="col-md-2 col-sm-12 col-xs-12 menu-item">
+					   						<a id="menu_committees" href="committees.html">Committees</a>
+					   					</div>
+					   				</div>
+					   				<div class="row">
+					   					<div class="col-md-2 col-sm-12 col-xs-12 menu-item">
+					   						<a id="menu_program" href="program.html">Program</a>
+					   					</div>
+					   					<div class="col-md-2 col-sm-12 col-xs-12 menu-item">
+					   						<a id="menu_guide" href="guide.html">Guide</a>
+					   					</div>
+					   					<div class="col-md-2 col-sm-12 col-xs-12 menu-item">
+					   						<a id="menu_submission" href="submission.html">Submission</a>
+					   					</div>
+					   					<div class="col-md-3 col-sm-12 col-xs-12 menu-item">
+					   						<a id="menu_specialissues" href="specialissues.html">Special Issue</a>
+					   					</div>
+					   					<div class="col-md-2 col-sm-12 col-xs-12 menu-item">
+					   						<a id="menu_registration" href="registration.html">Registration</a>
+					   					</div>
+					   				</div>
+					   			</div>
+					   		</div>
+					   </div>	
+					</div>
+				</div>
+		   </div>
+		</nav>
+
+		<!-- main body -->
 		<div class="container">
-			<div class="special-issues-view">
-				<h1 class="issues-title">Special issues</h1>
-				<h3 class="issues-sub-title">The special issues will focus on topics relevant to big data driven business intelligence in internet finance.</h3>
-				
+			<!-- content title -->
+			<div class="row">
+				<h1 id="title">Special Issue</h1>
+
+			</div>
+			<div class="row">
+				<h3 id="sub-title">The special issues will focus on topics relevant to big data driven business intelligence in internet finance.</h3>
+			</div>
+
+			<!-- tab content -->
+			<div class="row issues">
 				<div class="issue">
 					<h3 class="issue-title">Journal of Systems Science and Complexity</h3>
 					<div class="issue-content">
@@ -37,7 +116,7 @@
 						<p>All related original contributions with rigorous justifications and timely expository papers are welcome from all over the world.</p>
 					</div>
 					<div class="issue-picture">
-						<img src="res/images/issues/journal_of_systems_science_and_complexity.jpg" alt="Journal of Systems Science and Complexity">
+						<img class="img-responsive" src="res/images/issues/journal_of_systems_science_and_complexity.jpg" alt="Journal of Systems Science and Complexity">
 					</div>
 				</div>
 
@@ -49,7 +128,7 @@
 						<p>In addition to its regular issues, the journal publishes periodic issues devoted to a single subject area.</p>
 					</div>
 					<div class="issue-picture">
-						<img src="res/images/issues/electronic_commerce_research.jpg" alt="Electronic Commerce Research">
+						<img class="img-responsive" src="res/images/issues/electronic_commerce_research.jpg" alt="Electronic Commerce Research">
 					</div>
 				</div>
 
@@ -59,7 +138,7 @@
 						<p>This journal offers a global forum for exchanging innovative research findings across all fields of financial research. Areas of interest include asset pricing, derivative pricing and hedging, high-frequency and algorithmic trading, disruptive models and more.</p>
 					</div>
 					<div class="issue-picture">
-						<img src="res/images/issues/financial_innovation.jpg" alt="Financial Innovation">
+						<img class="img-responsive" src="res/images/issues/financial_innovation.jpg" alt="Financial Innovation">
 					</div>
 				</div>
 
@@ -70,7 +149,19 @@
 			</div>
 		</div>
 		
+		<!-- footer -->
+		<div id="footer" class="footer">
+			<div class="container">
+				<div class="row">
+					Email <a href="mailto:2016issf@gmail.com">2016issf@gmail.com</a>/
+					<a href="guide.html#map" target="_blank" style="text-decoration:none;">Conference Address</a>/
+					Copyright © 2016 <span>CityU</span> All rights reserved.
+				</div>
+			</div>
+		</div>
+		
 		<!-- module js -->
-		<script src="module/common/common.js"></script>
+		<script src="module/common.js"></script>
+
 	</body>
 </html>

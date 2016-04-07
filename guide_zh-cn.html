@@ -24,20 +24,98 @@
 		<script src="lib/headroom.js/dist/headroom.min.js"></script>
 	</head>
 	<body>
+		<!-- navigator -->
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="container">
+				<div class="row">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" 
+							 data-target="#navbar-collapse">
+							 <span class="icon-bar"></span>
+							 <span class="icon-bar"></span>
+							 <span class="icon-bar"></span>
+						</button>
+
+						<div class="navbar-brand">
+							<div id="language" class="switch-lang" title="转换语言为中文">
+								<img class="lang-img zh-cn" src="res/images/zh_cn.png">
+								<div class="title">中文</div>
+							</div>
+							<div class="brand-link">
+								<a title="International Summit on Smart Finance 2016" href="index.html">
+									ISSF 2016
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="menu-panel col-md-8 col-sm-12 col-xs-12">
+						<div class="collapse navbar-collapse" id="navbar-collapse">
+					   		<div class="nav nav-main">
+					   			<div class="container-fluid">
+					   				<div class="row">
+					   					<div class="col-md-2 col-sm-12 col-xs-12 menu-item active">
+					   						<a id="menu_home" href="index.html">Home</a>
+					   					</div>
+					   					<div class="col-md-2 col-sm-12 col-xs-12 menu-item">
+					   						<a id="menu_about" href="about.html">About</a>
+					   					</div>
+					   					<div class="col-md-2 col-sm-12 col-xs-12 menu-item">
+					   						<a id="menu_speakers" href="speakers.html">Speakers</a>
+					   					</div>
+					   					<div class="col-md-3 col-sm-12 col-xs-12 menu-item">
+					   						<a id="menu_researchcamps" href="researchcamps.html">Research Camp</a>
+					   					</div>
+					   					<div class="col-md-2 col-sm-12 col-xs-12 menu-item">
+					   						<a id="menu_committees" href="committees.html">Committees</a>
+					   					</div>
+					   				</div>
+					   				<div class="row">
+					   					<div class="col-md-2 col-sm-12 col-xs-12 menu-item">
+					   						<a id="menu_program" href="program.html">Program</a>
+					   					</div>
+					   					<div class="col-md-2 col-sm-12 col-xs-12 menu-item">
+					   						<a id="menu_guide" href="guide.html">Guide</a>
+					   					</div>
+					   					<div class="col-md-2 col-sm-12 col-xs-12 menu-item">
+					   						<a id="menu_submission" href="submission.html">Submission</a>
+					   					</div>
+					   					<div class="col-md-3 col-sm-12 col-xs-12 menu-item">
+					   						<a id="menu_specialissues" href="specialissues.html">Special Issue</a>
+					   					</div>
+					   					<div class="col-md-2 col-sm-12 col-xs-12 menu-item">
+					   						<a id="menu_registration" href="registration.html">Registration</a>
+					   					</div>
+					   				</div>
+					   			</div>
+					   		</div>
+					   </div>	
+					</div>
+				</div>
+		   </div>
+		</nav>
+
+		<!-- main body -->
 		<div class="container">
-			<div class="guide-view">
-				<h1>指引</h1>
-				<ul class="guide-menu nav nav-tabs" role="tablist">
-				  <li role="presentation" class="active">
-						<a id="map_title" href="#map" aria-controls="map" role="tab" data-toggle="tab">地图</a> 
-				  </li>
-				  <li role="presentation">
-				  		<a id="hotel_title" href="#hotel" aria-controls="ps" role="tab" data-toggle="tab">推荐酒店</a> 
-				  </li>
-				</ul>
-				<div class="guide-content tab-content">
-				  <div role="tabpanel" class="tab-pane fade in active" id="map">
-				  	<div class="map-view">
+			<!-- content title -->
+			<div class="row">
+				<h1 id="title">指引</h1>
+			</div>
+
+			<!-- tab menu -->
+			<ul class="row nav nav-tabs" role="tablist">
+				<li role="presentation" class="col-md-3 col-sm-4 col-xs-4 active">
+					<a id="map_title" href="#map" aria-controls="map" role="tab" data-toggle="tab">地图</a> 
+				</li>
+				<li role="presentation" class="col-md-3 col-sm-4 col-xs-4">
+					<a id="hotel_title" href="#hotel" aria-controls="hotel" role="tab" data-toggle="tab">推荐酒店</a>
+				</li>
+			</ul>
+
+			<!-- tab content -->
+			<div class="row tab-content">
+				<div role="tabpanel" class="tab-pane fade in active" id="map">
+					<div class="map-view">
 						<div class="address">
 							<h3>地址:</h3> 香港城市大学产学研大楼, 深圳市南山区高新区南区粤兴一道8号.
 						</div>
@@ -75,20 +153,22 @@
 							火车东站:<br/>
 							(1)	出站之后搭乘的士前往香港城市大学深圳研究院（车程约40分钟）<br/>
 							(2)	从深圳东站乘地铁（环中线）至黄贝岭站换成（蛇口线）至科苑站D出口（约1小时30分钟），步行约10分钟至大楼 <br/><br/>
-						
-							<img src="res/images/map.png" alt="map" />
+							
+							<div class="map-img">
+								<img class="img-responsive" src="res/images/map.png" alt="map" />
+							</div>
 						</div>
 				  	</div>
-				  </div>
-				  <div role="tabpanel" class="tab-pane fade" id="hotel">
-				  	<div class="hotel-view">
+				</div>
+				<div role="tabpanel" class="tab-pane fade" id="hotel">
+					<div class="hotel-view">
 						<!-- hotel 1 -->
 						<h3>凯宾斯基酒店 </h3>
 						<div class="focus">地址:</div> 南山区后海滨路海德三道 <br/>
 						距离香港城市大学深圳研究院2.5公里
 						<div class="focus">价格:</div> 人民币868/元（含早）另需加收15%服务费
 
-						<img src="res/images/hotel/KempinskiHotel_zh-cn.png" alt="凯宾斯基酒店" />
+						<img class="img-responsive" src="res/images/hotel/KempinskiHotel_zh-cn.png" alt="凯宾斯基酒店" />
 						
 						<!-- hotel 2 -->
 						<h3>博林诺富特酒店 </h3>
@@ -96,7 +176,7 @@
 						距离香港城市大学深圳研究院7.6公里
 						<div class="focus">价格:</div> 人民币689/元（含服务费含早餐）
 
-						<img src="res/images/hotel/NovotelBauhiniaShenzhen_zh-cn.png" alt="博林诺富特酒店" />
+						<img class="img-responsive" src="res/images/hotel/NovotelBauhiniaShenzhen_zh-cn.png" alt="博林诺富特酒店" />
 						
 						<!-- hotel 3 -->
 						<h3>新桃园酒店</h3>
@@ -104,7 +184,7 @@
 						距离香港城市大学深圳研究院2.5公里
 						<div class="focus">价格:</div> 人民币530/元（含服务费含早）
 
-						<img src="res/images/hotel/GrandViewHotel_zh-cn.png" alt="新桃园酒店" />
+						<img class="img-responsive" src="res/images/hotel/GrandViewHotel_zh-cn.png" alt="新桃园酒店" />
 						
 						<!-- hotel 4 -->
 						<h3>枫叶酒店 </h3>
@@ -112,28 +192,41 @@
 						距离香港城市大学深圳研究院2.5公里
 						<div class="focus">价格:</div> 人民币250/元（含服务费含早）
 
-						<img src="res/images/hotel/MapleLeafCityHotel_zh-cn.png" alt="枫叶酒店" />
+						<img class="img-responsive" src="res/images/hotel/MapleLeafCityHotel_zh-cn.png" alt="枫叶酒店" />
 				  	</div>
-				  </div>
+				</div>
+			</div>
+
+		</div>
+		
+		<!-- footer -->
+		<div id="footer" class="footer">
+			<div class="container">
+				<div class="row">
+					Email <a href="mailto:2016issf@gmail.com">2016issf@gmail.com</a>/
+					<a href="guide.html#map" target="_blank" style="text-decoration:none;">Conference Address</a>/
+					Copyright © 2016 <span>CityU</span> All rights reserved.
 				</div>
 			</div>
 		</div>
 		
 		<!-- module js -->
-		<script src="module/common/common.js"></script>
+		<script src="module/common.js"></script>
 		<script>
 			var hash = location.hash || location.search;
 	    	var questionMark = hash.indexOf('#');
 	    	if(questionMark !== -1) {
 	    		var subpage = hash.substring(questionMark + 1);
-	    		$('.guide-menu > li').removeClass('active');
-	    		$('.guide-content > .tab-pane').removeClass('in active');
+	    		$('.nav-tabs > li').removeClass('active');
+	    		$('.tab-content > .tab-pane').removeClass('in active');
+
+	    		console.log(subpage);
 
 	    		if(subpage == 'hotel') {
-					$($('.guide-menu > li')[1]).addClass('active');
+					$($('.nav-tabs > li')[1]).addClass('active');
 	    			$('#hotel').addClass('in active');
 	    		}else{
-	    			$($('.guide-menu > li')[0]).addClass('active');
+	    			$($('.nav-tabs > li')[0]).addClass('active');
 	    			$('#map').addClass('in active');
 	    		}
 	    	}

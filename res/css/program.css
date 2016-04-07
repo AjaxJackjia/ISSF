@@ -1,10 +1,5 @@
-.program-view
-{
-	width: 1200px;
-	margin: 0 auto;
-}
-
-.program-view > h1
+/* content title  */
+#title
 {
 	margin: 0 auto;
 	margin-top: 30px;
@@ -12,12 +7,83 @@
 	text-align: center;
 }
 
-.program-view > .program-content
+/* content */
+.program-content
 {
-	margin: 0 130px;
-	padding: 0 150px;
     margin-bottom: 280px;
     line-height: 25px;
     font-size: 16px;
     text-align: center;
 }
+
+/* agenda view begin */
+.agenda-view
+{
+	
+}
+
+.agenda-view > .arrangements
+{
+	width: 100%;
+	margin: 0px auto;
+}
+
+.agenda-view > .arrangements > .arrangement
+{
+	width: 100%;
+	margin-top: 20px;
+}
+
+.agenda-view > .arrangements > .arrangement > h3
+{
+	display: block;
+	width: 314px;
+	height: 52px;
+	text-align: center;
+	line-height: 52px;
+	background: #1c5ea8;
+	color: #fff;
+	font-size: 18px;
+	margin: 0px auto 13px;
+}
+
+.agenda-view > .arrangements > .arrangement > table
+{
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 50px;
+	border: none;
+	text-align: left;
+}
+
+.agenda-view > .arrangements > .arrangement > table .tr-even 
+{
+	background: #d5e4f0;
+}
+
+.agenda-view > .arrangements > .arrangement > table .table-head
+{
+	text-align: center;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.agenda-view > .arrangements > .arrangement > table td
+{
+	font-size: 16px;
+	line-height: 24px;
+	height: 46px;
+	border: none;
+	padding: 10px;
+}
+
+.agenda-view > .arrangements > .arrangement > table td.time
+{
+	width: 150px;
+}
+
+.agenda-view > .arrangements > .arrangement > table td.location
+{
+	width: 280px;
+}
+/* agenda view end */
