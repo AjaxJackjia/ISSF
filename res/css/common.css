@@ -58,6 +58,28 @@ body
 	min-height: 90px;
 }
 
+.navbar .navbar-header button
+{
+	padding: 4px;
+	color: #337ab7;
+}
+
+.navbar .navbar-header button .icon-bar
+{
+	margin: 3px auto;
+    width: 25px;
+    background-color: #337ab7;
+}
+
+.navbar .navbar-header button .menu-tip
+{
+	display: block;
+    width: 32px;
+    height: 10px;
+    font-size: 8px;
+    font-weight: 600;
+}
+
 .navbar .navbar-header .navbar-brand
 {
 	float: left;
