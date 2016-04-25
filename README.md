@@ -79,3 +79,6 @@ International Summit on Smart Finance
 
 3. 增加competition co-chair
 
+## 2016-04-25
+
+增加注册时间deadline提示
