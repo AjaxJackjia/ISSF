@@ -84,3 +84,7 @@ International Summit on Smart Finance
 1. 增加注册时间deadline提示;
 
 2. 增加媒体支持；
+
+## 2016-04-26
+
+新增注册费用与提示；
