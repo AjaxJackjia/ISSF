@@ -98,6 +98,11 @@
     text-align: center;
 }
 
+.sponsors-view > .sponsors-detail .row.space
+{
+	height: 20px;
+}
+
 .sponsors-view > .sponsors-detail .row img
 {
     margin: 0 auto;
@@ -116,6 +121,17 @@
 .underline
 {
 	text-decoration: underline;
+}
+
+/* icon */
+.sponsors-view > .sponsors-detail .row img.nsfc
+{
+	margin-top: 50px;
+}
+
+.sponsors-view > .sponsors-detail .row img.sri
+{
+	margin-top: 20px;
 }
 
 /* responsive css */
@@ -152,5 +168,11 @@
 	.introduction-view > p
 	{
 		padding: 0 10px;
+	}
+
+	.sponsors-view > .sponsors-detail .row img.nsfc,
+	.sponsors-view > .sponsors-detail .row img.sri
+	{
+		margin-top: 0px;
 	}
 }

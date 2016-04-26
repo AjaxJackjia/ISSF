@@ -87,4 +87,11 @@ International Summit on Smart Finance
 
 ## 2016-04-26
 
-新增注册费用与提示；
+1. 新增注册费用与提示；
+
+2. 新增协办方 上海交大、南京大学、 中央财经大学、 前景研究院；
+
+3. 修改Guangping Lin为Kuan-Pin Lin。
+
+
+
