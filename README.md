@@ -93,5 +93,9 @@ International Summit on Smart Finance
 
 3. 修改Guangping Lin为Kuan-Pin Lin。
 
+## 2016-04-28
+
+增加Panel Discussion
+
 
 
