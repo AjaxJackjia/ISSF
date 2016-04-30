@@ -108,3 +108,7 @@ International Summit on Smart Finance
 4. 竞赛页面（中/英）；TODO
 
 5. 新增sponsors；
+
+6. 新增speakder，Huaiqing Wang；
+
+7. 修改reasearch camp页面内容；
