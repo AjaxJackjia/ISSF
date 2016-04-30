@@ -22,7 +22,9 @@ var i18n_header_footer = {
 		'speakers': 'Speakers',
 		'specialissues': 'Special Issue',
 		'program': 'Program',
-		'researchcamps': 'Research Camp',
+		'researchcamps': 'Research Camp<span class="hot-icon glyphicon glyphicon-fire"></span>',
+		'competition': 'Competition<span class="hot-icon glyphicon glyphicon-fire"></span>',
+		'contactus': 'Contact Us',
 		
 		'home_value': 'index.html',
 		'about_value': 'about.html',
@@ -34,6 +36,8 @@ var i18n_header_footer = {
 		'specialissues_value': 'specialissues.html',
 		'program_value': 'program.html',
 		'researchcamps_value': 'researchcamps.html',
+		'competition_value': 'competition.html',
+		'contactus_value': 'contactus.html',
 
 		'host': 'hosts',
 		'contact': 'Secretariat of ISSF 2016',
@@ -62,7 +66,9 @@ var i18n_header_footer = {
 		'speakers': '主讲嘉宾',
 		'specialissues': '发表机会',
 		'program': '日程',
-		'researchcamps': '竞赛研讨',
+		'researchcamps': '科研辅导<span class="hot-icon glyphicon glyphicon-fire"></span>',
+		'competition': '峰会竞赛<span class="hot-icon glyphicon glyphicon-fire"></span>',
+		'contactus': '联系我们',
 		
 		'home_value': 'index_zh-cn.html',
 		'about_value': 'about_zh-cn.html',
@@ -74,6 +80,8 @@ var i18n_header_footer = {
 		'specialissues_value': 'specialissues_zh-cn.html',
 		'program_value': 'program_zh-cn.html',
 		'researchcamps_value': 'researchcamps_zh-cn.html',
+		'competition_value': 'competition_zh-cn.html',
+		'contactus_value': 'contactus_zh-cn.html',
 
 		'host': '主办方',
 		'contact': 'ISSF 2016 秘书组',
@@ -92,7 +100,87 @@ var i18n_header_footer = {
 	}
 };
 
+var generateHeaderFrame = function() {
+	return  '<div class="container">'+
+		    '	<div class="row">' + 
+			'		<div class="navbar-header">' + 
+			'			<button type="button" class="navbar-toggle" data-toggle="collapse" ' +  
+			'				 data-target="#navbar-collapse">' + 
+			'				 <span class="icon-bar"></span>' + 
+			'				 <span class="icon-bar"></span>' + 
+			'				 <span class="icon-bar"></span>' + 
+			'				 <span class="menu-tip">MENU</span>' + 
+			'			</button>' + 
+			'' + 
+			'			<div class="navbar-brand">' + 
+			'				<div id="language" class="switch-lang" title="转换语言为中文">' + 
+			'					<img class="lang-img zh-cn" src="res/images/zh_cn.png">' + 
+			'					<div class="title">中文</div>' + 
+			'				</div>' + 
+			'				<div class="brand-link">' + 
+			'					<a title="International Summit on Smart Finance 2016" href="index.html">' + 
+			'						ISSF 2016' + 
+			'					</a>' + 
+			'				</div>' + 
+			'			</div>' + 
+			'		</div>' + 
+			'' + 
+			'		<div class="menu-panel col-md-9 col-sm-12 col-xs-12">' + 
+			'			<div class="collapse navbar-collapse" id="navbar-collapse">' + 
+			'		   		<div class="nav nav-main">' + 
+			'		   			<div class="container-fluid">' + 
+			'		   				<div class="row">' + 
+			'		   					<div class="col-md-2 col-sm-12 col-xs-12 menu-item active">' + 
+			'		   						<a id="menu_home" href="index.html">Home</a>' + 
+			'		   					</div>' + 
+			'		   					<div class="col-md-1 col-sm-12 col-xs-12 menu-item">' + 
+			'		   						<a id="menu_about" href="about.html">About</a>' + 
+			'		   					</div>' + 
+			'		   					<div class="col-md-2 col-sm-12 col-xs-12 menu-item">' + 
+			'		   						<a id="menu_speakers" href="speakers.html">Speakers</a>' + 
+			'		   					</div>' + 
+			'		   					<div class="col-md-3 col-sm-12 col-xs-12 menu-item">' + 
+			'		   						<a id="menu_researchcamps" href="researchcamps.html">Research Camp</a>' + 
+			'		   					</div>' + 
+			'		   					<div class="col-md-2 col-sm-12 col-xs-12 menu-item">' + 
+			'		   						<a id="menu_committees" href="committees.html">Committees</a>' + 
+			'		   					</div>' + 
+			'		   					<div class="col-md-2 col-sm-12 col-xs-12 menu-item">' + 
+			'		   						<a id="menu_competition" href="competition.html">Competition</a>' + 
+			'		   					</div>' + 
+			'		   				</div>' + 
+			'		   				<div class="row">' + 
+			'		   					<div class="col-md-2 col-sm-12 col-xs-12 menu-item">' + 
+			'		   						<a id="menu_program" href="program.html">Program</a>' + 
+			'		   					</div>' + 
+			'		   					<div class="col-md-1 col-sm-12 col-xs-12 menu-item">' + 
+			'		   						<a id="menu_guide" href="guide.html">Guide</a>' + 
+			'		   					</div>' + 
+			'		   					<div class="col-md-2 col-sm-12 col-xs-12 menu-item">' + 
+			'		   						<a id="menu_submission" href="submission.html">Submission</a>' + 
+			'		   					</div>' + 
+			'		   					<div class="col-md-3 col-sm-12 col-xs-12 menu-item">' + 
+			'		   						<a id="menu_specialissues" href="specialissues.html">Special Issue</a>' + 
+			'		   					</div>' + 
+			'		   					<div class="col-md-2 col-sm-12 col-xs-12 menu-item">' + 
+			'		   						<a id="menu_registration" href="registration.html">Registration</a>' + 
+			'		   					</div>' + 
+			'		   					<div class="col-md-2 col-sm-12 col-xs-12 menu-item">' + 
+			'		   						<a id="menu_contactus" href="contactus.html">Contact Us</a>' + 
+			'		   					</div>' + 
+			'		   				</div>' + 
+			'		   			</div>' + 
+			'		   		</div>' + 
+			'		   </div>' + 	
+			'		</div>' + 
+			'	</div>' + 
+		    '</div>';
+};
+
 var generateHeader = function(p_locale) {
+	//generate header frame
+	$('.navbar.navbar-default').html(generateHeaderFrame());
+
 	//language setting
 	$('#language').attr('title', i18n_header_footer[p_locale]['lang-title']);
 	$('#language > .lang-img').attr('src', i18n_header_footer[p_locale]['lang-img']);
@@ -128,6 +216,12 @@ var generateHeader = function(p_locale) {
 
 	$('#menu_registration').html(i18n_header_footer[p_locale]['registration']);
 	$('#menu_registration').attr('href', i18n_header_footer[p_locale]['registration_value']);
+
+	$('#menu_competition').html(i18n_header_footer[p_locale]['competition']);
+	$('#menu_competition').attr('href', i18n_header_footer[p_locale]['competition_value']);
+
+	$('#menu_contactus').html(i18n_header_footer[p_locale]['contactus']);
+	$('#menu_contactus').attr('href', i18n_header_footer[p_locale]['contactus_value']);
 
 	//set active menu bar
 	var pageIndexBegin = location.href.lastIndexOf('/');
@@ -168,13 +262,31 @@ var generateHeader = function(p_locale) {
 			$('#menu_program').parent().addClass('active');
 		}else if(pageOrigin == 'researchcamps') {
 			$('#menu_researchcamps').parent().addClass('active');
+		}else if(pageOrigin == 'competition') {
+			$('#menu_competition').parent().addClass('active');
+		}else if(pageOrigin == 'contactus') {
+			$('#menu_contactus').parent().addClass('active');
 		}else{
 			$('#menu_home').parent().addClass('active');
 		}
 	}
 };
 
+var generateFooterFrame = function() {
+	return  '<div class="container">' + 
+			'	<div class="row">' + 
+			'		Email <a href="mailto:2016issf@gmail.com">2016issf@gmail.com</a>/ ' + 
+			'		<a href="guide.html#map" target="_blank" style="text-decoration:none;">Conference Address</a>/ ' + 
+			'		Copyright © 2016 <span>CityU</span> All rights reserved. ' + 
+			'	</div>' + 
+			'</div>';
+};
+
 var generateFooter = function(p_locale) {
+	//generate footer frame
+	$('#footer').html(generateFooterFrame());
+
+	//set footer language
 	var html_text = i18n_header_footer[p_locale]['email'] + 
 					'&nbsp;&nbsp;<a href="mailto:2016issf@gmail.com">2016issf@gmail.com</a>&nbsp;/&nbsp;' +
 					'<a href="guide.html#map" target="_blank" style="text-decoration:none;">' + 

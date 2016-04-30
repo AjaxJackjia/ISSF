@@ -97,5 +97,14 @@ International Summit on Smart Finance
 
 增加Panel Discussion
 
+## 2016-04-30
 
+1. 修改菜单，增加competition和contact us；
 
+2. 新增panel；
+
+3. 新增contact us页面（中/英）；
+
+4. 竞赛页面（中/英）；TODO
+
+5. 新增sponsors；

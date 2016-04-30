@@ -139,10 +139,17 @@ body
 	margin: 0;
 	height: 45px;
 	line-height: 45px;
+	border-bottom: 3px;
 
 	text-decoration: none;
 	font-weight: 800;
 	font-size: 18px;
+}
+
+.nav .menu-item > a .hot-icon
+{
+	color: red;
+	font-size: 11px;
 }
 
 .nav .menu-item.active > a
@@ -150,7 +157,7 @@ body
 	border-bottom: 3px solid #23a8f5;
 }
 
-.nav .menu-item a:hover
+.nav .menu-item > a:hover
 {
 	border-bottom: 3px solid #23a8f5;
 }
@@ -200,7 +207,7 @@ body
 	{
 		height: 30px;
 		line-height: 30px;
-		font-size: 16px;
+		font-size: 15px;
 	}
 
 	.navbar .navbar-header .navbar-brand .brand-link > a
