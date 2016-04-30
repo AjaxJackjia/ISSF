@@ -105,7 +105,7 @@ International Summit on Smart Finance
 
 3. 新增contact us页面（中/英）；
 
-4. 竞赛页面（中/英）；TODO
+4. 竞赛页面（中/英）；
 
 5. 新增sponsors；
 

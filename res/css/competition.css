@@ -8,60 +8,38 @@
 }
 
 /* content */
-.contactus-content
+.competition-item-content
 {
-	margin: 0 130px;
-	padding: 0 150px;
-    margin-bottom: 50px;
+	margin: 0 50px;
+	padding: 0 80px;
+    margin-bottom: 15px;
     line-height: 25px;
     font-size: 16px;
+
+    text-align: justify;
+	text-justify: inter-ideograph;
 }
 
-.sub-title
+.competition-item-content a
 {
-	margin-bottom: 50px;
-	text-align: center;
-	line-height: 30px;
-}
-
-.item-content
-{
-	margin-bottom: 50px;
-	text-align: center;
-}
-
-.line
-{
-	position: relative;
-  	text-align: center;
 	font-size: 18px;
-	text-transform: uppercase;
+	font-weight: 600;
 }
 
-.line span
+.competition-item-content > .competition-wechat
 {
-	background: #ffffff;
-  	padding: 0 15px;
-  	position: relative;
-  	z-index: 1;
+	max-width: 200px;
 }
 
-.line i
+.competition-item-content > .competition-logo
 {
-  	color: #666;
-  	margin-right: 10px;
+	margin: 0 auto;
+	margin-top: 50px;
+	margin-bottom: 100px;
+	max-width: 500px;
+	text-align: center;
 }
 
-.line:before
-{
-	background: #eeeeee;
-  	content: "";
-  	display: block;
-  	height: 1px;
-  	position: absolute;
-  	top: 50%;
-  	width: 100%;
-}
 
 /* responsive css */
 /* 大屏幕（大桌面显示器，大于等于 1200px） */
@@ -69,7 +47,7 @@
 
 /* 中等屏幕（桌面显示器，大于等于 992px，小于1200px） */
 @media (max-width: 1200px) { 
-	.contactus-content
+	.competition-item-content
 	{
 		margin-left: 60px;
 		margin-right: 60px;
@@ -79,7 +57,7 @@
 
 /* 小屏幕（平板，大于等于 768px，小于等于992px） */
 @media (max-width: 992px) {
-	.contactus-content
+	.competition-item-content
 	{
 		margin-left: 40px;
 		margin-right: 40px;
@@ -96,28 +74,21 @@
 		font-size: 25px;
 	}
 
-	.row h2,
-	.row h3
+	.row h2
 	{
 		font-size: 20px;
 	}
 
-	.contactus-content
+	.row h3
+	{
+		font-size: 18px;
+	}
+
+	.competition-item-content
 	{
 		margin-left: 10px;
 		margin-right: 10px;
 		padding: 0 10px;
-	}
-
-	.sub-title,
-	.item-content
-	{
-		margin-bottom: 30px;
-	}
-
-	.line span
-	{
-		font-size: 16px;
 	}
 }
 
